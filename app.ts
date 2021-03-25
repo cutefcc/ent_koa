@@ -70,9 +70,10 @@ server
         host: 'http://front:8540/',
         match: /^\/groundhog/,
         map: function (path) {
-          return path.includes('groundhog')
-            ? 'http://front:8540' + path.slice(10)
-            : ''
+          if (path.includes('groundhog')) {
+            return 'http://front:8540' + path.slice(10)
+          }
+          return ''
         },
       })
     )
