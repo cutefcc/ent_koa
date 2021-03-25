@@ -1,0 +1,17 @@
+{
+  "linters": {
+    "stylelint": {
+      "type": "script-and-regex",
+      "script-and-regex.script": "sh -c 'node ./node_modules/stylelint/bin/stylelint.js \"$0\"  || true'",
+      "script-and-regex.regex": "/^(\\h+)(?P<line>\\d+):(?P<char>\\d+)(\\h+)(?P<error>✖)(\\h+)(?P<message>.*)(\\h{1,})(?P<code>.*)$/m",
+      "include": "(front_end/routes/activity/.*\\.js$)i"
+    },
+    "eslint-regex-based": {
+      "type": "script-and-regex",
+      "include": "(\\.jsx?$)",
+      "exclude": [],
+      "script-and-regex.script": "sh -c '([ -e ./node_modules/.bin/eslint ]) && (./node_modules/.bin/eslint -f compact \"$0\" || true)'",
+      "script-and-regex.regex": "/^(?P<file>.*): line (?P<line>[0-9]*), col (?P<char>[0-9]*), (?P<warning>Warning|Error) - (?P<message>.*) \\((?P<code>[a-z-]+)\\)$/m"
+    }
+  }
+}
