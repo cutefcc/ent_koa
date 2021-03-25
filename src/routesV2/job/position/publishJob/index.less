@@ -1,0 +1,183 @@
+@import './../../../../utils/colors.less';
+
+.publishJobPage {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  min-height: 100%;
+  margin: 0 auto;
+  margin-top: 16px;
+  background: #fff;
+  overflow: hidden;
+  padding: 0 64px 32px;
+  .back {
+    border-bottom: 1px solid #eee;
+    height: 59px;
+    line-height: 60px;
+    padding-top: 15px;
+  }
+  .part1 {
+    margin: 44px 0 40px 0;
+  }
+  .partTitle {
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 1;
+    color: #222222;
+    margin: 12px 0;
+  }
+  .partTitleImg {
+    height: 34px;
+    margin-right: 4px;
+  }
+  .formItem {
+    // height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    :global {
+      .ant-legacy-form-item {
+        margin: 0;
+        width: 100%;
+      }
+      .ant-legacy-form-item-label > label,
+      .ant-legacy-form-item-label {
+        color: #999999;
+        font-size: 14px;
+        line-height: 34px;
+      }
+      .ant-legacy-form-item-children {
+        width: 416px;
+        display: inline-block;
+      }
+      .ant-legacy-form-explain {
+        display: inline-block;
+        margin-left: 16px;
+        font-size: 12px;
+      }
+      .ant-select-selection--single,
+      .ant-input {
+        height: 34px;
+      }
+      textarea.ant-input {
+        height: auto;
+      }
+      .ant-select-selection__rendered {
+        margin-left: 12px;
+      }
+      .ant-input {
+        padding-left: 12px;
+      }
+      .ant-legacy-form-item-control {
+        line-height: 34px;
+      }
+      textarea::-webkit-input-placeholder:after {
+        display: block;
+        content: 'line@ \A line#'; /*  \A 表示换行  */
+        color: red;
+      }
+    }
+  }
+  .bottom {
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+  }
+}
+.companyWrap {
+  display: flex;
+  width: 100%;
+  .hunter {
+    font-size: 12px;
+    position: absolute;
+    left: 428px;
+    width: 400px;
+    height: 34px;
+    line-height: 34px;
+  }
+}
+.companySug {
+  font-size: 14px;
+  color: #595959;
+  img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+}
+
+.positionSug {
+  font-size: 14px;
+  color: #595959;
+  p {
+    margin-bottom: 15px;
+  }
+  span {
+    font-size: 12px;
+    color: #999999;
+  }
+}
+
+.main {
+  margin: 24px 24px 0;
+  width: auto;
+}
+.publishSuccess {
+  border-radius: 6px;
+  :global {
+    .ant-modal-body {
+      height: 187px;
+      padding: 32px 24px 24px 24px;
+      display: flex;
+    }
+  }
+  .modalFoot {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    .buttonNot {
+      width: 88px;
+      height: 32px;
+      margin-right: 16px;
+      padding: 9px 16px 9px 16px;
+      font-size: 14px;
+      line-height: 14px;
+      color: #666666;
+      border: 1px solid rgba(201, 206, 217, 1);
+    }
+    .buttonOk {
+      width: 88px;
+      height: 32px;
+      margin-right: 8px;
+      padding: 9px 16px 9px 16px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  .modalFont {
+    width: 296px;
+    .topFont {
+      display: inline-block;
+      color: #222222;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    .bottomFont {
+      display: inline-block;
+      color: #666666;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  .iconStyle {
+    width: 40px;
+  }
+}

@@ -1,0 +1,394 @@
+.publishModal {
+  :global {
+    .ant-modal-body {
+      padding: 24px 32px;
+      overflow: auto;
+    }
+    .ant-modal-footer {
+      padding: 0 32px 25px;
+      border: none;
+    }
+  }
+  .imgsContainer {
+    margin-top: 16px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    .richContent {
+      position: relative;
+      margin-right: 8px;
+      img {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+      }
+      img:nth-of-last-child {
+        margin: 0;
+      }
+      video {
+        width: 160px;
+        height: 90px;
+        display: block;
+      }
+
+      .action {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        :global {
+          .anticon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: #fff;
+            font-size: 12px;
+            background: #000;
+          }
+        }
+      }
+
+      .duration {
+        position: absolute;
+        right: 4px;
+        bottom: 4px;
+        z-index: 1;
+        display: block;
+        font-size: 12px;
+        color: #fff;
+      }
+
+      &:hover {
+        .action {
+          opacity: 1;
+        }
+        .videoActionMask {
+          display: block;
+        }
+      }
+    }
+    .progressWrap {
+      width: 96px;
+      height: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #b1b6c1;
+      position: relative;
+      :global {
+        .anticon {
+          position: absolute;
+          right: 0;
+          top: 0;
+          color: #fff;
+          font-size: 12px;
+          z-index: 100;
+          background: #000;
+        }
+      }
+    }
+    .imgProgressWrap {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #b1b6c1;
+      margin-right: 8px;
+    }
+    .linkContent {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: rgba(247, 246, 249, 1);
+      border-radius: 2px;
+      padding: 8px;
+      padding-right: 60px;
+      width: 100%;
+      img {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+      }
+      p {
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+      }
+      :global {
+        .anticon {
+          position: absolute;
+          right: 0;
+          top: 0;
+          font-size: 12px;
+          background: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+  textarea {
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    line-height: 20px;
+    border: none;
+    padding: 0;
+    max-height: 376px;
+    &:focus {
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+.footerWrap {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .footerChild {
+    display: flex;
+    align-items: center;
+  }
+  .footerChild > span {
+    height: 21px;
+  }
+  p {
+    margin: 0;
+  }
+  .richBar {
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    img {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  }
+  .richBarDisabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  .textCount {
+    color: #c9ced9;
+    margin-right: 24px;
+  }
+  .textCountWarn {
+    color: #ff4d3c;
+  }
+}
+.tooltip {
+  max-width: 1000px;
+  :global {
+    .ant-tooltip-inner {
+      background-color: #fff;
+      padding: 2px;
+    }
+    .ant-tooltip-arrow::before,
+    .ant-tooltip-arrow-content {
+      width: 6px;
+      height: 6px;
+      background-color: #fff;
+    }
+    .ant-input-search-button {
+      border: none;
+      color: #0052ff;
+      background: #e5eeff;
+    }
+  }
+}
+.modalTitle {
+  display: flex;
+  align-items: center;
+  img {
+    width: 210px;
+    height: 28px;
+    margin-left: 10px;
+  }
+}
+.exampleFeedWrap {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 4px;
+  width: 560px;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 80px;
+  p {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.exampleFeedsScroll {
+  padding: 24px 32px;
+  height: 320px;
+  overflow: auto;
+}
+.exampleFeeds {
+  height: 2040px;
+  display: flex;
+  flex-flow: column wrap;
+  img {
+    width: 240px;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    border: 1px solid #f0f0f0;
+  }
+  /* 重新定义内容块排序优先级，让其横向排序 */
+  img:nth-child(2n + 1) {
+    order: 1;
+  }
+  img:nth-child(2n) {
+    order: 3;
+  }
+}
+
+/* 强制使内容块分列的隐藏列 */
+.exampleFeeds::before,
+.exampleFeeds::after {
+  content: '';
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+.videoCoverTooltip {
+  max-width: 430px;
+  :global {
+    .ant-tooltip-inner {
+      background-color: #fff;
+      padding: 16px;
+    }
+    .ant-tooltip-arrow::before,
+    .ant-tooltip-arrow-content {
+      width: 6px;
+      height: 6px;
+      background-color: #fff;
+    }
+  }
+}
+.editVideoFormTitle {
+  color: #afb1bc;
+  display: flex;
+  justify-content: space-between;
+}
+.videoAction {
+  cursor: pointer;
+  div:nth-of-type(2) {
+    margin-top: 5px;
+  }
+}
+.videoActionMask {
+  display: none;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(0, 0, 0, 0));
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.videoActionIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ffffff;
+  line-height: 20px;
+  padding: 0 8px;
+  cursor: pointer;
+  transform: rotate(90deg);
+  font-size: 16px;
+}
+
+// 涨粉小技巧
+.addFansTips {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 4px;
+  width: 560px;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+.addFansTipsHeader {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.addFansTipsMain {
+  padding: 16px 32px;
+  display: flex;
+  :global {
+    .ant-carousel {
+      width: 247px;
+      height: 232px;
+    }
+    .slick-dots {
+      z-index: -1;
+    }
+  }
+  .addFansContent {
+    div {
+      padding: 24px 0 0 6px;
+      p {
+        font-size: 16px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        color: #222222;
+        line-height: 22px;
+        margin-bottom: 4px;
+      }
+      span {
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        color: #666666;
+        line-height: 20px;
+      }
+    }
+    .activeTip {
+      p {
+        font-size: 20px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #0e5cfb;
+        line-height: 28px;
+      }
+    }
+  }
+}
+.addFansImg {
+  img {
+    width: 247px;
+    height: 232px;
+  }
+}

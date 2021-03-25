@@ -1,0 +1,74 @@
+@import './../../utils/colors.less';
+
+@width: 1184px;
+@padding: 16px 24px;
+
+.main {
+  display: flex;
+  width: @width;
+  height: 100%;
+  margin: 24px auto;
+
+  .affix {
+    position: fixed;
+    top: 64px;
+    width: @width;
+    background: #fff;
+    box-shadow: 0 0 0 #f0f0f0, -2px 0 2px #f0f0f0, 2px 0 2px #f0f0f0,
+      0 2px 2px #f0f0f0;
+    z-index: 2;
+  }
+
+  .left {
+    flex: 1;
+
+    .search {
+      padding: @padding;
+      background: #fff;
+    }
+
+    .batchSelection {
+      padding: @padding;
+      margin-top: 16px;
+      background: #fff;
+    }
+
+    .list {
+      // padding: 20px;
+      margin-top: 2px;
+      background: #fff;
+
+      :global {
+        .commonList {
+          padding: @padding;
+        }
+      }
+    }
+  }
+
+  .right {
+    width: 284px;
+    margin-left: 16px;
+
+    .filter {
+      padding: @padding;
+      background: #fff;
+    }
+
+    .static {
+      padding: @padding;
+      margin-top: 16px;
+      background: #fff;
+
+      .item {
+        display: block;
+        padding: 24px 0;
+        border-bottom: 1px solid @backgroundGrey;
+      }
+
+      .item:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}

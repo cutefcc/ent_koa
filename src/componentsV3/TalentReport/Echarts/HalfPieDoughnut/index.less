@@ -1,0 +1,102 @@
+.main {
+  width: 100%;
+
+  .topContentStyle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .showIconContent {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: center;
+
+      .showIconColor {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+      }
+
+      .showIconWord {
+        margin-right: 16px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #6e727a;
+      }
+    }
+  }
+
+  .halfPieDoughnutContentStyle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    // overflow: hidden;
+
+    .halfPieDoughnutItemStyle {
+      width: 30%;
+      height: 150px;
+      // overflow: hidden;
+      position: relative;
+    }
+
+    .halfPieDoughnutItemHoverStyle {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      // cursor: pointer;
+    }
+
+    .halfPieDoughnutItemHoverStyle:hover {
+      .notifyTooltips {
+        animation-duration: 0.3s;
+        animation-name: slidein;
+        display: block;
+      }
+    }
+
+    // hover显示动画
+    @keyframes slidein {
+      from {
+        left: 40%;
+      }
+
+      to {
+        left: 50%;
+      }
+    }
+
+    .notifyTooltips {
+      display: none;
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      white-space: nowrap;
+      color: rgba(255, 255, 255, 0.85);
+      padding: 4px 6px;
+      background: rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
+        0px 6px 16px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      z-index: 9999;
+
+      .titleStyle {
+        font-size: 14px;
+      }
+
+      .contentStyle {
+        font-size: 14px;
+      }
+    }
+  }
+}

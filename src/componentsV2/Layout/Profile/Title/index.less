@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  height: 40px;
+
+  .right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 340px;
+  }
+
+  .left {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .basicInfo {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+}
+.arrowBtn:focus {
+  opacity: 1;
+  background: rgba(230, 236, 255, 0.6);
+  color: #ffffff;
+}

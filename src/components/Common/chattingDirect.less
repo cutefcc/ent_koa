@@ -1,0 +1,66 @@
+@import './../../utils/colors.less';
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 5px 20px 5px 0;
+}
+
+.positionSelection {
+  // padding-top: 20px;
+  border-top: 1px dashed #ccc;
+  margin-top: 20px;
+}
+
+.itemTitle {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.initMessagePanel {
+  display: flex;
+}
+
+.initMessage {
+  flex: 1;
+  padding: 0 10px;
+  background: @grey;
+}
+
+.initMessage::before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 7px 7px 7px 0;
+  border-style: solid;
+  border-color: transparent transparent @grey;
+  content: '';
+}
+
+.messageInput {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  overflow: auto;
+  font-size: 14px;
+  resize: none;
+}
+
+.tip {
+  margin-top: 2px;
+  color: red;
+}
+
+.sendButton {
+  padding: 0 20px;
+  background: @blue;
+}
+
+.refundTip {
+  margin-left: 10px;
+  color: #ccc;
+  font-size: 12px;
+}

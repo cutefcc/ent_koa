@@ -1,0 +1,34 @@
+@import './../../../utils/colors.less';
+
+.inputPanel {
+  min-width: 300px;
+  padding-right: 40px;
+  border-right: 1px solid #ccc;
+
+  :global {
+    .ant-input-number {
+      width: 200px;
+    }
+
+    .ant-legacy-form-item-label {
+      text-align: left;
+    }
+  }
+
+  :global {
+    .ant-legacy-form-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.leftValuePanel {
+  margin-left: 30px;
+}
+
+.button {
+  padding: 0 50px;
+  margin-top: 50px;
+  color: #fff;
+  background: @blue;
+}

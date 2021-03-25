@@ -1,0 +1,208 @@
+.popConfirm {
+  :global {
+    .ant-popover-buttons {
+      button {
+        padding: 0 7px;
+        height: 24px;
+        line-height: 24px;
+      }
+    }
+    .ant-checkbox-wrapper {
+      position: relative;
+      top: 48px;
+      left: 0;
+    }
+  }
+}
+
+.popConfirmTitle {
+  margin: 0 0 10px 20px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #15161f;
+  line-height: 22px;
+}
+
+.popConfirmTips {
+  padding-left: 20px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #6e727a;
+  line-height: 20px;
+}
+
+.popConfirmText {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px;
+}
+
+.orange {
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: orange;
+  line-height: 24px;
+}
+
+.modalTitle {
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #15161f;
+  line-height: 24px;
+}
+
+.modalTips {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #6e727a;
+  line-height: 22px;
+}
+.landline {
+  position: absolute;
+  top: 32px;
+  // transform: matrix(1, 0, 0, 1, 0, 40);
+  // position: relative;
+  width: 110px;
+  height: 76px;
+  .topBlank {
+    height: 4px;
+    width: 100%;
+    opacity: 1;
+  }
+  .bottomContent {
+    height: 72px;
+    background-color: darkorange;
+    background: #ffffff;
+    box-shadow: 0px 10px 32px 0px rgba(21, 22, 31, 0.18);
+    border-radius: 4px;
+    padding-top: 4px;
+    .bottomContentPhone {
+      height: 32px;
+      line-height: 32px;
+      margin-left: 16px;
+      font-size: 14px;
+      color: #15161f;
+      cursor: pointer;
+    }
+    .bottomContentLandline {
+      height: 32px;
+      line-height: 32px;
+      margin-left: 16px;
+      font-size: 14px;
+      color: #15161f;
+      cursor: pointer;
+      display: flex;
+    }
+  }
+}
+.landlineCon {
+  position: relative;
+}
+.areaInput {
+  width: 56px;
+  height: 32px;
+  border: 1px solid #d1d3de;
+  border-radius: 4px;
+  outline: none;
+  text-indent: 8px;
+}
+.landLineInput {
+  height: 32px;
+  border: 1px solid #d1d3de;
+  border-radius: 4px;
+  outline: none;
+  text-indent: 8px;
+}
+.bindLandline {
+  display: flex;
+  margin-top: 30px;
+  .left {
+    width: 312px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 48px;
+    color: #afb1bc;
+    font-size: 14px;
+  }
+  .rightBtn {
+    width: 88px;
+  }
+}
+.alreadyBandContent {
+  padding: 0px 32px 0px 56px;
+  .bandContentName {
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+    color: #15161f;
+  }
+  .bandContentPhone {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffa408;
+    margin-top: 16px;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .bandContentTime {
+    width: 120px;
+    margin: 0 auto;
+    height: 24px;
+    line-height: 24px;
+    background: #f4f5fa;
+    color: #6e727a;
+    font-size: 12px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .bandContentDesc {
+    font-size: 12px;
+    color: #afb1bc;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 56px;
+    text-align: center;
+  }
+  .bandContentBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    padding-top: 15px;
+    border-top: 1px dashed #eeeff7;
+    .bandContentBottomLeft {
+      height: 32px;
+      line-height: 32px;
+      width: 106px;
+      display: flex;
+    }
+    .bandContentBottomRight {
+      display: flex;
+      justify-content: flex-end;
+      height: 32px;
+      line-height: 32px;
+      width: 260px;
+    }
+  }
+}
+
+:global {
+  .recharge-popover-box.ant-popconfirm
+    .ant-popover-inner-content
+    .ant-popover-buttons
+    button:first-child {
+    display: none;
+  }
+  .custom-modal-wrapper .ant-modal-confirm .ant-modal-body {
+    margin: 24px;
+  }
+  // it's dangerous since it will override global antd class rules
+  .ant-modal-confirm .ant-modal-body {
+    padding: 24px;
+  }
+}

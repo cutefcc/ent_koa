@@ -1,0 +1,130 @@
+@import './../../utils/colors.less';
+@import './../../utils/common.less';
+
+@siderWidth: 160px;
+
+.sider {
+  position: fixed;
+  width: @siderWidth;
+  height: 100%;
+  background: #fff;
+  box-shadow: 1px 0 1px #f2f3f5;
+
+  :global {
+    .ant-menu-dark.ant-menu-inline {
+      background: #fff;
+    }
+
+    .ant-layout-sider-children {
+      height: 100%;
+      overflow: auto;
+    }
+  }
+}
+
+.contentLayout {
+  padding-left: @siderWidth;
+
+  :global {
+    .ant-layout-header {
+      padding: 0;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+
+.layout {
+  :global {
+    .ant-layout-content {
+      height: 100%;
+      overflow: auto;
+    }
+  }
+}
+
+.openMemberTip {
+  .footer {
+    display: flex;
+
+    .giveupButton {
+      flex: 1;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      margin-right: 16px;
+      color: #fff;
+      background: rgb(207, 207, 207);
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .applyButton {
+      flex: 1;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      color: #fff;
+      background: @blue;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  :global {
+    .ant-modal-content {
+      padding: 0 40px;
+    }
+
+    .ant-modal-body {
+      padding-top: 48px;
+
+      p {
+        padding: 0;
+      }
+    }
+
+    .ant-modal-footer {
+      padding-bottom: 48px;
+      border-top: none;
+    }
+  }
+}
+
+.upgradeMemberTip {
+  .tip {
+    font-size: 14px;
+    &:extend(.fontStress);
+  }
+
+  .content {
+    display: flex;
+    margin-top: 21px;
+
+    .item {
+      flex: 1;
+      padding: 24px;
+      margin-left: 12px;
+
+      h4 {
+        margin: 0;
+        font-size: 20px;
+        &:extend(.fontStress);
+      }
+
+      ul {
+        padding: 0 0 0 20px;
+        margin-top: 12px;
+        color: @commonFontColor;
+
+        li {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .item:first-child {
+      margin-left: 0;
+    }
+  }
+}

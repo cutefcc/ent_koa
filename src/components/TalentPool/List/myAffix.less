@@ -1,0 +1,79 @@
+@height: 30px;
+
+.main {
+  display: flex;
+  padding: 16px 0 0 24px;
+
+  .left {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-bottom: 16px;
+
+    .search {
+      display: flex;
+      justify-content: space-between;
+      width: 350px;
+      line-height: @height;
+
+      .loc {
+        width: 170px;
+      }
+
+      .profession {
+        width: 170px;
+      }
+
+      :global {
+        .ant-input {
+          height: @height;
+        }
+
+        .ant-select-selection--single {
+          height: @height;
+        }
+
+        .ant-cascader-picker-clear {
+          right: 26px;
+        }
+      }
+    }
+
+    .batchOp {
+      display: flex;
+      line-height: @height;
+
+      :global {
+        .directChatButtonPanel {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  .right {
+    width: 284px;
+    padding-left: 24px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: @height;
+    cursor: pointer;
+
+    .icon {
+      color: #999;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}
+
+.pop {
+  width: 251px;
+
+  :global {
+    .filterTitle {
+      display: none;
+    }
+  }
+}

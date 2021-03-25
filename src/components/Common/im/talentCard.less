@@ -1,0 +1,74 @@
+@import './../../../utils/colors.less';
+
+.card {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+.checkedCard {
+  background: #eee;
+}
+
+.basicInfo {
+  display: flex;
+  margin-bottom: 10px;
+
+  .avatarPanel {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .unreadTip {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    float: right;
+    padding: 0 5px;
+    border-radius: 3px;
+    color: #fff;
+    background: #fe9807;
+    font-size: 12px;
+  }
+
+  &Brief {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+
+    &Title {
+      h4 {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        font-size: 15px;
+      }
+
+      span {
+        color: @blue;
+      }
+    }
+
+    &Content {
+      color: #666;
+      font-size: 12px;
+    }
+  }
+}
+
+.exp,
+.edu {
+  font-size: 13px;
+
+  &Item {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.expPopContent {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,90 @@
+@import './../../../utils/colors.less';
+@import './../../../utils/common.less';
+
+.contentWrapper {
+  .inputLeft {
+    margin-right: 23px;
+  }
+  .inputRight {
+    margin-left: 23px;
+  }
+  .inputPanel {
+    .label {
+      font-size: 14px;
+      color: #222222;
+      // font-weight: bold;
+      margin-bottom: 8px;
+      line-height: 1em;
+    }
+
+    .maxAllocate {
+      font-size: 13px;
+      color: #999999;
+      font-weight: 400;
+      margin-top: 8px;
+      line-height: 1em;
+
+      .error {
+        color: #ff3b30;
+      }
+    }
+
+    :global {
+      .ant-input-number {
+        width: 184px;
+        height: 40px;
+        line-height: 40px;
+      }
+
+      .ant-legacy-form-item-label {
+        text-align: left;
+      }
+
+      .ant-input-number-handler-wrap {
+        display: none;
+      }
+    }
+
+    :global {
+      .ant-legacy-form-item:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .gap {
+    .gapFactory(1px, 30px, #e4e6eb);
+  }
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.equityModal {
+  :global {
+    .ant-modal-header {
+      border: none;
+      padding: 32px;
+    }
+    .ant-modal-close-x {
+      height: 78px;
+      width: 78px;
+      line-height: 85px;
+    }
+    .ant-modal-title {
+      color: #363d4d;
+      font-family: PingFangSC-Medium, arial, verdana, helvetica, 'PingFang SC',
+        'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+    }
+    .ant-modal-body {
+      padding: 0 32px;
+    }
+    .ant-modal-footer {
+      border: none;
+      padding: 28px 32px 32px 0;
+    }
+  }
+}

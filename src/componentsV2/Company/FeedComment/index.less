@@ -1,0 +1,140 @@
+.commentBox {
+  display: flex;
+  .textAreaBox {
+    position: relative;
+    display: flex;
+    margin-left: 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(242, 244, 248, 1);
+    padding-right: 20px;
+    .textarea {
+      line-height: 20px;
+      resize: none;
+      border: none;
+      width: 470px;
+      -webkit-box-shadow: none;
+      min-height: 40px;
+      box-shadow: none;
+      padding: 10px 16px;
+      &:focus {
+        box-shadow: none;
+        border: none;
+      }
+    }
+
+    .emoji {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0 0 12px 0px;
+    }
+    img {
+      width: 16px;
+      height: 16px;
+      // position: absolute;
+      // right: 16px;
+      // bottom: 12px;
+      cursor: pointer;
+    }
+  }
+}
+
+.box-shadow:focus {
+  border-color: none;
+}
+
+.commentDetailItem {
+  display: flex;
+  margin-bottom: 16px;
+  .avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .companyInfo {
+    display: flex;
+    color: #222222;
+    margin-bottom: 8px;
+    .companyName {
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(34, 34, 34, 1);
+    }
+    .companyNumIcon {
+      color: #2a2a2a;
+    }
+  }
+  .companyText {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  .companyBar {
+    .like,
+    .replay {
+      cursor: pointer;
+      color: #4e629a;
+    }
+    .time {
+      color: #999999;
+    }
+  }
+}
+
+// tips
+
+.tooltip {
+  max-width: 1000px;
+  :global {
+    .ant-tooltip-inner {
+      background-color: #fff;
+      padding: 2px;
+    }
+    .ant-tooltip-arrow::before,
+    .ant-tooltip-arrow-content {
+      width: 6px;
+      height: 6px;
+      background-color: #fff;
+    }
+    .ant-input-search-button {
+      border: none;
+      color: #0052ff;
+      background: #e5eeff;
+    }
+  }
+}
+
+//  comment wrap
+.wrap {
+  margin: 18px 0 0 56px;
+  .total {
+    font-weight: 600;
+    height: 14px;
+    font-size: 14px;
+    color: rgba(34, 34, 34, 1);
+    line-height: 14px;
+    margin: 16px 16px 16px 0;
+  }
+}
+
+// 1px line
+.line {
+  height: 1px;
+  width: 100%;
+  background: #f2f4f8;
+  overflow: hidden;
+}
+
+// more
+.more {
+  margin-left: 40px;
+  cursor: pointer;
+  color: #4e629a;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,59 @@
+@import './../../../utils/colors.less';
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+  &:extend(.fontStress);
+
+  .tip {
+    font-size: 14px;
+    &:extend(.fontDilution);
+  }
+}
+
+.loadingTip {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  color: @dilutionFontColor;
+  height: 400px;
+  padding-top: 100px;
+
+  :global {
+    .anticon-loading {
+      color: @buttonBlueBg;
+      font-size: 40px;
+    }
+  }
+}
+
+.content {
+  min-height: 200px;
+  margin-top: 16px;
+
+  * {
+    line-height: 1em;
+  }
+
+  .line {
+    display: flex;
+    margin-top: 24px;
+
+    .channelCard {
+      flex: 1;
+      overflow: hidden;
+      margin-left: 24px;
+    }
+
+    .channelCard:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .line:first-child {
+    margin-top: 0;
+  }
+}

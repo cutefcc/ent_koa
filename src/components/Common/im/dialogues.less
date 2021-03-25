@@ -1,0 +1,144 @@
+.messageItem {
+  margin-bottom: 20px;
+}
+
+// 系统消息
+.systemMessage {
+  display: flex;
+  justify-content: center;
+
+  span {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #aaa;
+    background: #eee;
+    font-size: 12px;
+  }
+}
+
+// 普通消息
+.commonMessageRight {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-left: 100px;
+
+  .content {
+    margin-right: 10px;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .name {
+    margin-left: 10px;
+  }
+
+  .msg {
+    float: right;
+  }
+}
+
+.commonMessageLeft {
+  display: flex;
+  padding-right: 100px;
+
+  .name {
+    margin-right: 10px;
+  }
+
+  .content {
+    margin-left: 10px;
+  }
+}
+
+.commonMessage {
+  .avatar {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #eee;
+  }
+
+  .msg {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #eee;
+  }
+
+  .date {
+    color: #aaa;
+    font-size: 12px;
+  }
+}
+
+// 卡片
+.card {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 20px 45px;
+
+  .head {
+    padding: 10px;
+
+    h4 {
+      margin-bottom: 0;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    span {
+      color: #aaa;
+      font-size: 12px;
+    }
+  }
+
+  .content {
+    display: flex;
+    padding: 10px;
+    border-top: 1px dashed #ccc;
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #eee;
+      margin-right: 10px;
+    }
+
+    .brief {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #aaa;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.file {
+  display: flex;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+
+  .image {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #dedede;
+  }
+
+  .fileContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+
+    .fileName {
+      font-size: 15px;
+    }
+  }
+}

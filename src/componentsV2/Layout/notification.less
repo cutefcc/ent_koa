@@ -1,0 +1,95 @@
+@import './../../utils/colors.less';
+
+.globalNotification {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 52px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  background: #fffde7;
+
+  .messageContent {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-right: 24px;
+    color: @gray_600;
+    overflow: hidden;
+    font-size: 12px;
+  }
+
+  .talentInfo {
+    max-width: 270px;
+  }
+
+  :global {
+    .ant-notification-notice-icon .anticon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 16px;
+      // color: #fff;
+      // background: @blue_400;
+      font-size: 13px;
+    }
+
+    .ant-notification-notice-close {
+      display: none;
+    }
+
+    .ant-notification-notice-content,
+    .ant-notification-notice-with-icon {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .ant-notification-notice-icon {
+        position: relative;
+        margin-left: 0;
+      }
+
+      .ant-notification-notice-message {
+        flex: 1;
+        padding-right: 0;
+        margin-bottom: 0;
+        margin-left: 8px;
+        overflow: hidden;
+      }
+
+      .ant-notification-notice-description {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.callingIcon {
+  color: #fff;
+  background: @blue_400;
+}
+
+.breakIcon {
+  color: #fff;
+  background: @bgray_400;
+}
+
+.refuseIcon {
+  color: #fff;
+  background: #d0021b;
+}
+
+.successIcon {
+  color: #fff;
+  background: @green_500;
+}
+
+.button {
+  height: 24px;
+  padding: 0 8px;
+  font-size: 12px;
+}

@@ -1,0 +1,284 @@
+@import './../../utils/colors.less';
+
+.ant-modal-content {
+  width: 100px !important;
+}
+.headerMain {
+  border-bottom: 1px solid #eeeeee;
+  background: #ffffff;
+  height: 48px;
+  font-size: 14px;
+  color: #666f80;
+  line-height: 48px;
+
+  > div:nth-child(1) {
+    width: 40%;
+  }
+  > div:nth-child(2) {
+    width: 20%;
+  }
+  > div:nth-child(3) {
+    width: 20%;
+  }
+  > div:nth-child(4) {
+    width: 20%;
+  }
+  > div {
+    float: left;
+  }
+}
+
+.main {
+  height: 137px;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  > div:nth-child(1) {
+    width: 40%;
+  }
+  > div:nth-child(2) {
+    width: 20%;
+  }
+  > div:nth-child(3) {
+    width: 20%;
+  }
+  > div:nth-child(4) {
+    width: 20%;
+  }
+  > div {
+    float: left;
+  }
+  .headPortrait {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+    margin: 24px 0 0 16px;
+  }
+}
+
+.buttons {
+  display: flex;
+  margin-top: 10px;
+  button {
+    width: 80px;
+    height: 30px;
+    border-radius: 16px;
+    margin-right: 16px;
+  }
+}
+
+.allElection {
+  margin: 0 48px 0 16px;
+  width: 14px;
+  height: 14px;
+  img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.radioMain {
+  width: 14px;
+  height: 14px;
+}
+
+.radio {
+  width: 14px;
+  height: 14px;
+  margin: 37px 0 0 16px;
+}
+
+.resumeCardInfo {
+  flex: 1;
+}
+
+.resumeInfo {
+  display: flex;
+}
+
+.company {
+  position: relative;
+  top: 6px;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.v_judged {
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+  margin: 4px 0 0 4px;
+}
+
+.line1 {
+  margin: 24px 0 0 10px;
+  display: flex;
+  height: 14px;
+  width: 90%;
+  p {
+    color: #a1a6b3;
+    flex: 1;
+    padding-left: 16px;
+  }
+}
+.line1Name {
+  color: #363d4d;
+  max-width: 100px;
+  position: relative;
+  line-height: 14px;
+  top: 4px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  cursor: pointer;
+}
+.line1Name:hover {
+  color: #266fff;
+}
+.jobPosition {
+  cursor: pointer;
+}
+.jobPosition {
+  p:hover {
+    color: #266fff;
+  }
+}
+
+.errorImg {
+  width: 40px;
+  height: 40px;
+  background: #f2f4f8;
+  borderradius: 50%;
+  margin: 24px 0 0 16px;
+}
+.display {
+  color: #a1a7b3;
+  cursor: auto !important;
+}
+.line2 {
+  margin: 16px 0 0 10px;
+  span:first-child {
+    color: #a1a6b3;
+    padding-right: 8px;
+  }
+}
+
+.line3 {
+  margin: 0 0 0 10px;
+  span:first-child {
+    color: #a1a6b3;
+    padding-right: 8px;
+  }
+}
+
+.position {
+  div:first-child {
+    padding-top: 25px;
+    height: 14px;
+    color: #363d4d;
+  }
+  div:nth-child(2) {
+    color: #a1a7b3;
+    padding-top: 32px;
+  }
+  p {
+    color: #363d4d;
+  }
+  p:hover {
+    color: #266fff;
+  }
+}
+
+.handle {
+  display: flex;
+  color: #266fff;
+  div {
+    cursor: pointer;
+    margin-top: 25px;
+    padding-right: 24px;
+  }
+}
+
+.page {
+  height: 144px;
+  background: white;
+  ul {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+}
+
+.popupMain {
+  width: 746px;
+  height: 100%;
+  background: white;
+  border-radius: 4px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-animation: down 0.4s infinite;
+  animation: down 0.4s infinite;
+  transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes down {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.listMain {
+  margin-top: 24px;
+  background: white;
+  height: 90%;
+}
+
+.centerTip {
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 16px;
+  text-align: center;
+}
+
+.notData {
+  height: 90%;
+  background: white;
+  width: 197px;
+  margin: 240px auto 0 auto;
+  img {
+    width: 197px;
+    height: 132px;
+  }
+  p {
+    padding-top: 24px;
+    text-align: center;
+  }
+}

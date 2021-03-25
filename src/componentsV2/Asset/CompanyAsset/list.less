@@ -1,0 +1,70 @@
+@import './../../../utils/colors.less';
+
+.main {
+  padding: 10px 20px;
+
+  :global {
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      padding: 16px 10px;
+    }
+  }
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.op {
+  color: @blue;
+  cursor: pointer;
+}
+
+.opIcon {
+  margin-right: 5px;
+}
+
+.staffStatus {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+  color: @blue;
+}
+
+.subUname {
+  display: flex;
+  align-items: center;
+  div {
+    height: 18px;
+    padding: 0 4px;
+    margin-left: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    background-color: rgba(0, 21, 41, 1);
+    color: #ffffff;
+  }
+
+  .reachNbrTag0 {
+    background-color: rgba(242, 244, 248, 1);
+    color: rgba(177, 182, 193, 1);
+  }
+  .reachNbrTag1 {
+    background-color: rgba(78, 98, 154, 0.5);
+    color: #ffffff;
+  }
+  .reachNbrTag2 {
+    background-color: rgba(78, 98, 154, 0.75);
+    color: #ffffff;
+  }
+  .reachNbrTag3 {
+    background-color: rgba(78, 98, 154, 1);
+    color: #ffffff;
+  }
+  .reachNbrTag4 {
+    background-color: rgba(0, 21, 41, 1);
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,38 @@
+@import './../../utils/colors.less';
+
+.line1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line2 {
+  margin-top: 8px;
+}
+
+.line3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+
+  .name {
+    display: inline-block;
+    height: 24px;
+    margin-left: 8px;
+    line-height: 24px;
+  }
+}
+
+.button {
+  width: 76px;
+  height: 24px;
+  border: none;
+  line-height: 24px;
+  color: @buttonBlueBg;
+  background: #f7f9f9;
+  border-radius: 12px;
+}
+
+.button:hover {
+  color: #fff;
+  background: @buttonBlueBg;
+}

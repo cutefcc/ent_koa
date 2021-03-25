@@ -1,0 +1,304 @@
+@import './../../utils/colors.less';
+
+.main {
+  position: relative;
+  width: 1024px;
+  padding: 60px 62px;
+  margin: 0 auto;
+  color: #333;
+  background: #fff;
+  font-family: PingFangSC-Regular arial, verdana, helvetica, 'PingFang SC',
+    'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+}
+
+.main::before {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: fixed;
+  display: block;
+  width: 100%;
+  height: 6px;
+  margin-bottom: 60px;
+  background: -webkit-linear-gradient(
+    left,
+    #1dd3e7,
+    #3b7aff
+  ); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(
+    right,
+    #1dd3e7,
+    #3b7aff
+  ); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(
+    right,
+    #1dd3e7,
+    #3b7aff
+  ); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #1dd3e7, #3b7aff); /* 标准的语法 */
+  content: '';
+}
+
+.sectionTitle {
+  padding-left: 10px;
+  border-left: 5px solid #3b7aff;
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.sectionItem {
+  display: flex;
+  margin-top: 30px;
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+  }
+
+  .info {
+    margin-left: 10px;
+
+    p {
+      text-align: justify;
+      text-justify: inter-ideograph;
+    }
+
+    .line1 {
+      padding: 0;
+      margin: 0;
+      margin-top: 4px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .line2 {
+      padding: 0;
+      margin: 0;
+      margin-top: 8px;
+      color: rgba(153, 153, 153, 1);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .line3 {
+      padding: 0;
+      margin: 0;
+      margin-top: 14px;
+      color: #666;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    .line4 {
+      margin: 0;
+      margin-top: 14px;
+      color: #666;
+    }
+  }
+}
+
+.friendAvatar {
+  margin-right: 6px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.tags {
+  margin-top: 40px;
+
+  .info {
+    margin-top: 40px;
+
+    .tag {
+      padding: 5px 17px;
+      border-radius: 15px;
+      margin-right: 18px;
+      color: #666;
+      background: rgba(238, 238, 238, 1);
+      font-size: 14px;
+    }
+  }
+}
+
+.basic {
+  .line1 {
+    display: flex;
+    justify-content: space-between;
+
+    .info {
+      display: flex;
+
+      .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+        color: rgba(51, 51, 51, 1);
+
+        h5 {
+          display: inline-block;
+          margin: 0;
+          margin-right: 20px;
+          font-weight: 600;
+          font-size: 25px;
+        }
+
+        .group {
+          display: inline-block;
+          border: 1px solid @blue;
+          margin-right: 10px;
+          color: @blue;
+          line-height: 20px;
+
+          span {
+            padding: 0 10px;
+            font-size: 13px;
+          }
+        }
+
+        .group::before {
+          padding: 4px 5px;
+          color: #fff;
+          background: @blue;
+          font-weight: 600;
+          font-size: 13px;
+          content: 'G';
+        }
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .operations {
+      display: flex;
+
+      .addFriendButton,
+      .groupButton {
+        margin-right: 40px;
+      }
+
+      .commonButton {
+        width: 86px;
+        height: 32px;
+        border: none;
+        color: #fff;
+        background: @buttonBlueBg;
+      }
+
+      .commonButton:hover {
+        background: @buttonBlueHover;
+      }
+
+      .commonButton[disabled] {
+        background: @buttonGreyBg;
+      }
+    }
+  }
+
+  .line2 {
+    margin-top: 10px;
+
+    span {
+      display: inline-block;
+      width: 225px;
+      margin-top: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  }
+}
+
+.exp {
+  margin-top: 40px;
+}
+
+.edu {
+  margin-top: 40px;
+}
+
+.footer {
+  width: 1024px;
+  padding: 40px 62px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  background: #fff;
+
+  .cardItems {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 210px;
+    padding: 24px 10px;
+    border: 1px solid #dcdcdc;
+    margin-top: 20px;
+    margin-right: 15px;
+
+    p {
+      text-align: center;
+    }
+
+    .cardAvatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      font-size: 30px;
+      line-height: 50px;
+    }
+
+    .cardName {
+      margin: 0;
+      color: #666;
+      font-size: 16px;
+    }
+
+    .cardPosition {
+      margin: 0;
+      color: #999;
+      font-size: 14px;
+    }
+
+    .cardCompany {
+      display: inline-block;
+      width: 100%;
+      margin: 10px 0 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .cardSchool {
+      margin: 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .cardShowDetail {
+      display: inline-block;
+      width: 100%;
+      margin: 20px 0 0;
+      color: @blue;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .card:hover {
+    // border: 1px solid #3375ff;
+    box-shadow: 0 -1px 3px #3375ff, 1px 0 3px #3375ff, 0 1px 3px #3375ff,
+      -1px 0 3px #3375ff;
+  }
+}

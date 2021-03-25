@@ -1,0 +1,215 @@
+@import './../../../utils/colors.less';
+
+.publishJobPage {
+  padding: 0 32px;
+  .back {
+    border-bottom: 1px solid #eee;
+    height: 59px;
+    line-height: 60px;
+    padding-top: 15px;
+  }
+  .part1 {
+    margin: 44px 0 40px 0;
+  }
+  .partTitle {
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 1;
+    color: #222222;
+    margin: 12px 0;
+  }
+  .partTitleImg {
+    height: 34px;
+    margin-right: 4px;
+  }
+  .combineForm {
+    :global {
+      .ant-legacy-form-item {
+        margin: 0;
+      }
+      .ant-legacy-form-item-label > label {
+        color: #999999;
+        font-size: 14px;
+      }
+      .ant-legacy-form-item-children {
+        .ant-legacy-form-item-children {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .bottom {
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+}
+.companyWrap {
+  display: flex;
+  width: 100%;
+  position: relative;
+  .hunter {
+    font-size: 12px;
+    position: absolute;
+    left: 86px;
+    top: 50px;
+    width: 400px;
+  }
+  .applyHunter {
+    color: #3375ff;
+    cursor: pointer;
+  }
+  .publicCompany {
+    position: absolute;
+    left: 86px;
+    top: 50px;
+    p {
+      font-size: 12px;
+      color: #999;
+      padding-left: 25px;
+      margin: 0;
+    }
+  }
+}
+.companySug {
+  font-size: 14px;
+  color: #595959;
+  img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+}
+
+.positionSug {
+  font-size: 14px;
+  color: #595959;
+  p {
+    margin-bottom: 15px;
+  }
+  span {
+    font-size: 12px;
+    color: #999999;
+  }
+}
+
+.descCount {
+  width: 500px;
+  text-align: right;
+  font-size: 12px;
+  margin: 0;
+  color: #999;
+}
+
+.preCheckErr {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .text {
+    font-size: 14px;
+    color: #999;
+  }
+  .qrCode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    canvas {
+      margin: 16px 60px;
+    }
+  }
+}
+.buyVipModal {
+  :global {
+    .ant-modal-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 32px;
+    }
+  }
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 32px;
+  }
+  .text {
+    font-size: 14px;
+    color: #999;
+  }
+  .qrCode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 160px;
+    }
+  }
+}
+
+.buyVipModalV2 {
+  :global {
+    .ant-modal-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      .control-dots {
+        .dot {
+          margin: 0 4px;
+          background: #e9cea3;
+        }
+      }
+    }
+    .left-container {
+      width: 340px;
+      height: 552px;
+      background-image: url('https://i9.taou.com/maimai/p/27006/9838_53_1BQXMVlcTLQdiV');
+      .slice-item {
+        position: relative;
+        height: 552px;
+        .item-contain {
+          position: absolute;
+          margin-top: 96px;
+          .title {
+            font-size: 24px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #e9cea3;
+            line-height: 24px;
+          }
+          .sub-title {
+            margin-top: 16px;
+            font-size: 16px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #e9cea3;
+            line-height: 16px;
+          }
+          .item-img {
+            margin-top: 22px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

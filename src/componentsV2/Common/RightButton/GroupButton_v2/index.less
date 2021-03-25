@@ -1,0 +1,36 @@
+@import './../../../../utils/colors.less';
+.groupModal {
+  width: 480px !important;
+  :global {
+    .ant-modal-header {
+      border: none;
+      padding: 32px;
+      padding-bottom: 24px;
+    }
+    .ant-modal-close-x {
+      height: 78px;
+      width: 78px;
+      line-height: 85px;
+    }
+    .ant-modal-title {
+      color: #363d4d;
+      font-family: PingFangSC-Medium, arial, verdana, helvetica, 'PingFang SC',
+        'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+    }
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-modal-footer {
+      border: none;
+      padding: 24px 32px 32px 0;
+    }
+  }
+}
+:global {
+  .ant-popover {
+    .ant-popover-inner-content {
+      padding: 12px 16px;
+      padding-right: 16px;
+    }
+  }
+}

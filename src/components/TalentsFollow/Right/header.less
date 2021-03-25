@@ -1,0 +1,66 @@
+@import './../../../utils/colors.less';
+
+.main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .right {
+    width: 240px;
+    height: 24px;
+    border-left: 1px solid #eee;
+    line-height: 24px;
+
+    :global {
+      .ant-select-selection {
+        height: 24px;
+        border: none;
+        line-height: 24px;
+      }
+
+      .ant-select-selection__rendered {
+        line-height: 24px;
+      }
+    }
+  }
+
+  .left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+    .type {
+      :global {
+        .ant-select-selection {
+          height: 24px;
+          border: none;
+          line-height: 24px;
+        }
+
+        .ant-select-selection__rendered {
+          color: @stressFontColor;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .stateSelection {
+      margin-left: 8px;
+
+      .item {
+        padding: 0 16px;
+        color: @commonFontColor;
+        font-size: 14px;
+        line-height: 14px;
+        cursor: pointer;
+      }
+
+      .activeItem {
+        color: @buttonBlueBg;
+        font-family: PingFangSC-Medium;
+      }
+    }
+  }
+}

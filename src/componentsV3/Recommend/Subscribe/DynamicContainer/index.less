@@ -1,0 +1,95 @@
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.filter {
+  padding-left: 11px;
+  border-left: 1px solid #eee;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.dynamicContainer {
+  width: 100%;
+  min-height: 300px;
+  // height: 100%;
+  // background-color: #fff;
+}
+.titleAffix {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.titleNoAffix {
+  width: 100%;
+}
+
+.defaultTip {
+  padding-top: 120px;
+  padding-right: 12px;
+  p {
+    line-height: 1em;
+    text-align: center;
+  }
+
+  .resultTip {
+    margin-top: 24px;
+    font-size: 18px;
+    &:extend(.fontDilution);
+  }
+}
+
+.jobSelectionTitle {
+  margin-top: 24px;
+  font-size: 14px;
+  &:extend(.fontDilution);
+}
+
+.jobTag {
+  display: inline-block;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 16px;
+  margin-top: 16px;
+  margin-left: 16px;
+  background: #f7f9f9;
+  line-height: 32px;
+  cursor: pointer;
+  &:extend(.fontCommon);
+}
+
+.jobTag:first-child {
+  margin-left: 0;
+}
+
+.emptyImage {
+  display: block;
+  width: 198px;
+  margin: 0 auto;
+}
+.guideButtonText {
+  height: 22px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 22px;
+}
+.guideButtonTextV3 {
+  font-size: 16px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #15161f;
+  line-height: 24px;
+}

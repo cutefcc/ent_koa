@@ -1,0 +1,30 @@
+@import './../../../utils/colors.less';
+
+.total {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.part {
+  padding: 24px 16px;
+
+  .partTitle {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 14px;
+    border-left: 2px solid @blue;
+    margin-left: -16px;
+    font-size: 14px;
+    &:extend(.fontStress);
+  }
+
+  .item {
+    margin-top: 20px;
+    color: @commonFontColor;
+
+    .title {
+      color: @dilutionFontColor;
+      font-size: 14px;
+    }
+  }
+}

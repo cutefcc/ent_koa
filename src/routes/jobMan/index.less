@@ -1,0 +1,40 @@
+@import './../../utils/colors.less';
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+
+  .top {
+    display: absolute;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: @backgroundGrey;
+    z-index: 2;
+
+    .content {
+      width: 960px;
+      margin: 0 auto;
+    }
+
+    .num {
+      margin: 0 3px;
+      color: @blue;
+      font-family: PingFangSC-Medium arial, verdana, helvetica, 'PingFang SC',
+        'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+    }
+
+    .button {
+      color: @blue;
+      cursor: pointer;
+    }
+  }
+
+  .iframe {
+    display: flex;
+    flex: 1;
+    margin-top: -80px;
+  }
+}

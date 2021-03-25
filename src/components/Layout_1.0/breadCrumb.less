@@ -1,0 +1,116 @@
+@import './../../utils/common.less';
+@import './../../utils/colors.less';
+
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+
+  :global {
+    .ant-breadcrumb {
+      width: 100%;
+      font-size: 20px;
+      line-height: @headerHeight;
+
+      .ant-breadcrumb-link a {
+        color: @commonFontColor;
+      }
+
+      .ant-breadcrumb-link a:hover {
+        color: @buttonBlueBg;
+      }
+
+      .ant-breadcrumb-link {
+        color: @stressFontColor;
+        font-family: PingFangSC-Medium arial, verdana, helvetica, 'PingFang SC',
+          'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+      }
+    }
+  }
+
+  .searchInput {
+    :global {
+      .ant-select-auto-complete.ant-select-lg .ant-input {
+        padding-left: 43px;
+        border: none;
+      }
+
+      .ant-input-search.ant-input-search-enter-button > .ant-input-suffix {
+        left: -30px;
+      }
+
+      .ant-input-search.ant-input-search-enter-button > .ant-input {
+        padding-right: 0;
+      }
+    }
+  }
+}
+.talentsCount {
+  cursor: pointer;
+  color: #363d4d;
+  font-weight: 400;
+  font-size: 16px;
+  &:hover {
+    color: @blueHover;
+  }
+}
+
+.searchCrumb {
+  display: flex;
+
+  .crumbTitle {
+    min-width: 120px;
+  }
+
+  :global {
+    .global-search {
+      flex: 1;
+      max-width: 700px;
+      margin-top: 10px;
+
+      .ant-select-selection {
+        background: @backgroundGrey;
+      }
+
+      .ant-input {
+        padding-left: 43px;
+        border: none;
+      }
+
+      .ant-input-search.ant-input-search-enter-button > .ant-input-suffix {
+        left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .breadcrumb {
+    .searchInput {
+      width: 160px;
+    }
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1300px) {
+  .breadcrumb {
+    .searchInput {
+      width: 180px;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1350px) {
+  .breadcrumb {
+    .searchInput {
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .breadcrumb {
+    .searchInput {
+      width: 250px;
+    }
+  }
+}

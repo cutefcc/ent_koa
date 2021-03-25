@@ -1,0 +1,122 @@
+@import './../../../utils/colors.less';
+
+.initButton {
+  height: 21px;
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: none;
+}
+
+.operation {
+  height: auto;
+  padding: 1px 9px;
+  border: 1px solid @blue;
+  color: @blue;
+}
+
+.icon {
+  // margin-right: 5px;
+}
+
+.group {
+  border-color: @red;
+  color: @red;
+}
+
+.tip {
+  .footer {
+    display: flex;
+
+    .giveupButton {
+      flex: 1;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      margin-right: 16px;
+      color: #fff;
+      background: rgb(207, 207, 207);
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .applyButton {
+      flex: 1;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      color: #fff;
+      background: @blue;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  :global {
+    .ant-modal-content {
+      padding: 0 40px;
+    }
+
+    .ant-modal-body {
+      padding-top: 48px;
+
+      p {
+        padding: 0;
+      }
+    }
+
+    .ant-modal-footer {
+      padding-bottom: 48px;
+      border-top: none;
+    }
+  }
+}
+
+.groupItem {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 16px;
+  margin-top: 8px;
+  margin-right: 8px;
+  background: #f7f9f9;
+  cursor: pointer;
+}
+
+.activeGroupItem {
+  color: #fff;
+  background: @blue;
+}
+
+.failTip {
+  :global {
+    .ant-modal-content {
+      width: 480px;
+
+      .anticon-cross-circle {
+        display: none;
+      }
+    }
+
+    .ant-confirm-body .ant-confirm-content {
+      max-height: 400px;
+      margin-left: 0;
+      overflow: auto;
+    }
+
+    .ant-confirm-body .ant-confirm-title {
+      font-size: 18px;
+    }
+
+    .ant-confirm-btns {
+      width: 100%;
+
+      .ant-btn-primary {
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        background: @blue;
+        font-size: 14px;
+      }
+    }
+  }
+}

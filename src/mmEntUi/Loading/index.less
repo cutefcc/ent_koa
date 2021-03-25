@@ -1,0 +1,209 @@
+@width: 18px;
+@height: 4px;
+
+@keyframes line3 {
+  0% {
+    width: 0;
+    height: @height;
+  }
+
+  1% {
+    width: @width / 3;
+    height: @height;
+  }
+
+  10% {
+    width: @width / 3;
+    height: @height;
+  }
+
+  11% {
+    width: @width / 3 * 2;
+    height: @height;
+  }
+
+  20% {
+    width: @width / 3 * 2;
+    height: @height;
+  }
+
+  21% {
+    width: @width;
+    height: @height;
+  }
+
+  30% {
+    width: @width;
+    height: @height;
+  }
+
+  90% {
+    width: @width;
+    height: @height;
+  }
+
+  95% {
+    width: @width / 2;
+    height: @height;
+  }
+
+  100% {
+    width: 0;
+    height: @height;
+  }
+}
+
+@keyframes line2 {
+  0% {
+    width: 0;
+    height: @height;
+  }
+
+  15% {
+    width: 0;
+    height: @height;
+  }
+
+  16% {
+    width: @width / 3;
+    height: @height;
+  }
+
+  25% {
+    width: @width / 3;
+    height: @height;
+  }
+
+  26% {
+    width: @width / 3 * 2;
+    height: @height;
+  }
+
+  35% {
+    width: @width / 3 * 2;
+    height: @height;
+  }
+
+  36% {
+    width: @width;
+    height: @height;
+  }
+
+  45% {
+    width: @width;
+    height: @height;
+  }
+
+  90% {
+    width: @width;
+    height: @height;
+  }
+
+  95% {
+    width: @width / 2;
+    height: @height;
+  }
+
+  100% {
+    width: 0;
+    height: @height;
+  }
+}
+
+@keyframes line1 {
+  0% {
+    width: 0;
+    height: @height;
+  }
+
+  30% {
+    width: 0;
+    height: @height;
+  }
+
+  31% {
+    width: @width / 3;
+    height: @height;
+  }
+
+  40% {
+    width: @width / 3;
+    height: @height;
+  }
+
+  41% {
+    width: @width / 3 * 2;
+    height: @height;
+  }
+
+  50% {
+    width: @width / 3 * 2;
+    height: @height;
+  }
+
+  51% {
+    width: @width;
+    height: @height;
+  }
+
+  60% {
+    width: @width;
+    height: @height;
+  }
+
+  90% {
+    width: @width;
+    height: @height;
+  }
+
+  95% {
+    width: @width / 2;
+    height: @height;
+  }
+
+  100% {
+    width: 0;
+    height: @height;
+  }
+}
+
+.loading {
+  display: flex;
+  display: inline-block;
+  flex-direction: column;
+  // align-items: flex-end;
+  width: @width + 6;
+
+  .line {
+    display: block;
+    // width: @width;
+    // height: @height;
+    width: 0;
+    height: @height;
+  }
+
+  .line1 {
+    // display: none;
+    margin-left: 6px;
+    background: #abc6ff;
+    animation: line1 1.2s 0s infinite ease-in;
+    // animation: loading 1.5s 1s infinite;
+  }
+
+  .line2 {
+    // display: none;
+    margin-top: @height;
+    margin-left: 3px;
+    background: #78a4ff;
+    animation: line2 1.2s 0s infinite ease-in;
+    // animation: loading 1.5s .5s infinite;
+  }
+
+  .line3 {
+    margin-top: @height;
+    margin-left: 0;
+    background: #3b7aff;
+    animation: line3 1.2s 0s infinite ease-in;
+    // animation: loading 1.5s 0s infinite;
+  }
+}

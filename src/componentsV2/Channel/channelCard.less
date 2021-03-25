@@ -1,0 +1,68 @@
+@import './../../utils/colors.less';
+
+.card {
+  height: 100%;
+  padding: 24px;
+  border-radius: 6px;
+  background: #fff;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  * {
+    line-height: 1em;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+
+    .channelName {
+      font-size: 18px;
+      &:extend(.fontStress);
+    }
+
+    .description {
+      margin-top: 8px;
+      font-size: 14px;
+      &:extend(.fontCommon);
+    }
+
+    .button {
+      width: 64px;
+      height: 32px;
+      border: none;
+      border-radius: 16px;
+      color: #fff;
+      background: @buttonBlueBg;
+      font-size: 16px;
+      font-family: PingFangSC-Regular arial, verdana, helvetica, 'PingFang SC',
+        'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+      line-height: 32px;
+
+      span {
+        line-height: 32px;
+      }
+    }
+  }
+
+  .content {
+    .talentCard {
+      padding: 24px 0;
+      border-bottom: 1px solid #eee;
+    }
+  }
+
+  .footer {
+    display: inline-block;
+    width: 100%;
+    margin-top: 24px;
+    text-align: center;
+    cursor: pointer;
+    &:extend(.fontCommon);
+  }
+}

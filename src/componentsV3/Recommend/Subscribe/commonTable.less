@@ -1,0 +1,306 @@
+.subscribeContainer {
+  padding: 0 16px 16px 24px;
+  background: #fff;
+  min-height: 532px;
+}
+.subscribeHeader {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscribeTitle {
+  font-size: 16px;
+  font-family: PingFangSC-Medium, arial, verdana, helvetica, 'PingFang SC',
+    'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.subscribeHandler {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.subscribeBtn {
+  position: relative;
+  margin-left: 24px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(0, 82, 255, 1);
+  cursor: pointer;
+}
+
+.notifyContainer {
+  position: relative;
+  // padding-left: 20px;
+}
+
+.notify,
+.notifyIcon {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.notifyIcon:hover + div {
+  display: block;
+}
+
+.subscribePos {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribePosTitle {
+  max-width: 240px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1366px) {
+  .subscribePosTitle {
+    width: 170px;
+  }
+}
+
+.notifyContainer {
+  position: relative;
+}
+
+.tooltips,
+.notifyTooltips,
+.setSwitchTooltips,
+.loaderTooltips,
+.importTooltips {
+  display: none;
+  position: absolute;
+  top: -28px;
+  left: 26px;
+  width: 182px;
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
+    0px 6px 16px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  z-index: 9999;
+}
+
+.tooltips::after,
+.notifyTooltips::after,
+.setSwitchTooltips::after,
+.loaderTooltips::after,
+.importTooltips::after {
+  content: ' ';
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  margin-top: -5px;
+  margin-left: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+}
+
+.setSwitchContainer {
+  display: inline-block;
+  .notify:hover + div {
+    display: block;
+  }
+}
+
+// .notifyTooltips::after {
+//     left: 50%;
+//     top: 0;
+// }
+
+.notifyIcon:hover + div {
+  display: block;
+}
+
+.setSwitchTooltips {
+  width: 80px;
+  left: auto;
+  right: -6px;
+  top: -50px;
+  border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+}
+
+.setSwitchTooltips::after {
+  top: 0;
+  left: 50%;
+  margin-top: 42px;
+  margin-left: -5px;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+.loaderTooltips {
+  list-style-type: none;
+  z-index: 99;
+  top: -48px;
+  left: auto;
+  right: 0;
+  width: auto;
+  transform: translateX(100%);
+  padding: 12px;
+}
+
+.importTooltips {
+  z-index: 9999;
+  width: 152px;
+  height: 45px;
+  top: 27px;
+  left: -48px;
+  line-height: 20px;
+}
+
+.importTooltips::after {
+  border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+  top: -4px;
+  left: 50%;
+}
+
+.viewRateCell {
+  position: relative;
+  cursor: pointer;
+}
+
+.fans,
+.delivery,
+.dynamicCnt {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.viewRateContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.viewRateContainer:hover + ul {
+  display: block;
+}
+
+.viewLoaderBox {
+  width: 96px;
+  height: 8px;
+  background: rgba(230, 236, 255, 1);
+  border-radius: 5px;
+}
+.viewLoader {
+  width: 64px;
+  min-width: 8px;
+  height: 8px;
+  background: rgba(59, 122, 255, 1);
+  border-radius: 5px;
+}
+
+.orangeFont {
+  color: #ffa408;
+}
+
+.viewRateLoader {
+  height: 8px;
+  background: rgba(59, 122, 255, 1);
+  border-radius: 5px;
+}
+
+.viewNumber {
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.45);
+  margin-left: 4px;
+}
+
+.numbers {
+  padding-left: 5px;
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: rgba(255, 77, 60, 1);
+  line-height: 18px;
+  display: inline-block;
+  line-height: 20px;
+}
+
+.emptyContainer {
+  text-align: center;
+  margin-top: 184px;
+  margin-bottom: 250px;
+}
+
+.emptyText {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #999999;
+  line-height: 14px;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+
+.commonTable {
+  :global {
+    .ant-table table {
+      // margin-left: 20px;
+      // width: calc(100% - 20px);
+    }
+    .ant-table-thead > tr:first-child > th:first-child {
+      // padding-left: 20px;
+    }
+    .ant-table-tbody > tr {
+      position: relative;
+    }
+    .ant-table-thead > tr > th {
+      background: transparent;
+      padding: 12px 0;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.45);
+      border-bottom: 1px solid #eee;
+    }
+    .ant-table-tbody > tr > td {
+      background: transparent;
+      padding: 20px 0;
+      padding-right: 16px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.85);
+      border-bottom: 1px solid #eee;
+    }
+    .ant-table-row:hover .subscribe-handle-container {
+      // display: block;
+      visibility: visible;
+    }
+    .subscribe-handle-container {
+      width: 42px;
+      // display: none;
+      visibility: hidden;
+    }
+    .ant-table-tbody .ant-table-row:last-child td {
+      border-bottom: none;
+    }
+  }
+}
+
+.pagination {
+  text-align: right;
+  margin: 18px 0;
+}

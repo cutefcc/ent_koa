@@ -1,0 +1,38 @@
+@import '../../utils/colors.less';
+
+.tooltip {
+  :global {
+    .ant-tooltip {
+      max-width: 280px;
+    }
+    .ant-tooltip-inner {
+      background: rgba(21, 22, 31, 0.8);
+      backdrop-filter: blur(5px);   
+      padding: 8px 12px;
+      box-shadow: 0 10px 32px rgba(21, 22, 31, 0.18);
+    }
+    .ant-tooltip-arrow-content{
+      background-color:  rgba(21, 22, 31, 0.8);
+    }
+    .ant-tooltip-arrow {
+      z-index: 1200;
+    }
+  }
+  
+}
+.white {
+  :global {
+    .ant-tooltip-inner {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(5px);   
+      color: @bgray_900_V3;
+      box-shadow: 0 10px 32px rgba(21, 22, 31, 0.18);
+    }
+    .ant-tooltip-arrow-content{
+      background: rgba(255, 255, 255, 0.8);
+    }
+    .ant-tooltip-arrow {
+      z-index: 1200;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.progressForm {
+  .row {
+    display: flex;
+    width: 732px;
+    padding: 14px 8px;
+  }
+  .row:hover {
+    background: #fafafa;
+  }
+  .time {
+    width: '80px';
+  }
+  .action {
+    display: flex;
+    align-items: center;
+    .edit {
+      color: #3375ff;
+    }
+    .delete {
+      margin-left: 16px;
+      color: #ff4d3c;
+    }
+  }
+  .wrap {
+    max-height: 360px;
+    overflow-y: scroll;
+  }
+  .content {
+    margin-left: 16px;
+    width: '536px';
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

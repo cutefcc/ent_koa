@@ -1,0 +1,41 @@
+@import './../../../utils/colors.less';
+
+.title {
+  font-size: 14px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+
+  .item {
+    position: unset;
+    height: 30px;
+    padding: 0 12px;
+    border: none;
+    border-radius: 18px;
+    margin: 10px 7px 0 0;
+    color: #666;
+    background: @backgroundGrey;
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  :global {
+    .ant-radio-button-wrapper-checked {
+      color: #fff;
+      background: @blue;
+    }
+
+    // .ant-radio-button-wrapper-checked::after {
+    //   padding-left: 10px;
+    //   border-left: 1px solid #fff;
+    //   margin-left: 7px;
+    //   color: #fff;
+    //   font-weight: 600;
+    //   font-size: 16px;
+    //   content: '×';
+    // }
+  }
+}

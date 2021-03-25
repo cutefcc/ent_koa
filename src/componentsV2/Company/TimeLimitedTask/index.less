@@ -1,0 +1,192 @@
+.wrap {
+  background: #fff;
+  margin-top: 16px;
+}
+.header {
+  height: 62px;
+  border-bottom: 1px solid #f2f4f8;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.clogos {
+  padding: 0 8px;
+  height: 24px;
+  :global {
+    .ant-avatar {
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .ant-avatar-group .ant-avatar:not(:first-child) {
+      margin-left: -4px;
+    }
+  }
+}
+.rules {
+  p {
+    margin: 0;
+  }
+}
+.ruleInfo {
+  span {
+    font-size: 16px;
+  }
+  .headerInfo {
+    color: #999eaa;
+  }
+}
+.main {
+  display: flex;
+  padding: 16px 0;
+  .processTask {
+    display: flex;
+    justify-content: space-between;
+    width: 792px;
+    padding: 0 24px;
+  }
+}
+.mainDivider {
+  height: 64px;
+  top: 2px;
+  margin: 0;
+  margin-right: 24px;
+}
+
+// 任务卡片
+.taskCardWrap {
+  position: relative;
+  :global {
+    .task-card {
+      width: 136px;
+      height: 68px;
+      border-radius: 8px;
+      padding: 8px 12px;
+      background: #f4f5fa;
+      p {
+        margin-bottom: 6px;
+        line-height: 22px;
+        color: #724418;
+        white-space: nowrap;
+      }
+    }
+    .add-fans {
+      font-size: 12px;
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 4px;
+      background: #ffa408;
+      padding: 0 6px;
+      color: #fff;
+    }
+    .task-footer {
+      font-size: 12px;
+      text-align: center;
+      font-family: PingFangSC-Regular, PingFang SC;
+      color: #6e727a;
+      line-height: 26px;
+      white-space: nowrap;
+    }
+  }
+}
+.taskCardWrap0 {
+  opacity: 0.65;
+  :global {
+    .task-card {
+      p {
+        color: #747682;
+      }
+    }
+    .add-fans {
+      background: #9d9fad;
+    }
+    .task-footer {
+      color: #d1d3de;
+    }
+  }
+}
+
+.taskCardWrap2 {
+  cursor: pointer;
+  :global {
+    .task-card {
+      background: linear-gradient(45deg, #ff7946 0%, #ff4948 100%);
+      p {
+        color: #fff;
+      }
+    }
+    .add-fans {
+      background: #ffed4f;
+      color: #724418;
+    }
+    .task-footer {
+      color: #ff4d3c;
+    }
+  }
+}
+
+.taskCardWrap3 {
+  div {
+    opacity: 0.5;
+  }
+  :global {
+    .task-card {
+      background: linear-gradient(45deg, #ff7946 0%, #ff4948 100%);
+      p {
+        color: #fff;
+      }
+    }
+    .add-fans {
+      background: #ffed4f;
+      color: #724418;
+    }
+    .task-footer {
+      color: #ff4d3c;
+    }
+  }
+  &:after {
+    position: absolute;
+    left: 48px;
+    top: 14px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('https://i9.taou.com/maimai/p/25605/2998_53_11oRJDHpEGUEpsVz');
+    background-size: 40px;
+  }
+}
+
+.taskCardWrap4 {
+  :global {
+    .task-card {
+      width: 169px;
+      background: #fef8e8;
+    }
+    .task-footer {
+      color: #724418;
+    }
+  }
+}
+
+.taskCardWrapDone {
+  div {
+    opacity: 0.5;
+  }
+  &:after {
+    position: absolute;
+    left: 64px;
+    top: 14px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('https://i9.taou.com/maimai/p/25605/2998_53_11oRJDHpEGUEpsVz');
+    background-size: 40px;
+  }
+}

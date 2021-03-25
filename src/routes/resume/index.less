@@ -1,0 +1,74 @@
+@import './../../utils/colors.less';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 1280px;
+  padding: 24px 23px 0 23px;
+}
+.popupMain {
+  width: 746px;
+  height: 100%;
+  background: white;
+  border-radius: 4px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-animation: down 0.4s infinite;
+  animation: down 1s infinite;
+  transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes down {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.listMain {
+  margin-top: 24px;
+}
+
+.centerTip {
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 16px;
+  text-align: center;
+}
+
+.notData {
+  width: 197px;
+  margin: 0 auto;
+  padding-top: 240px;
+  img {
+    width: 197px;
+    height: 132px;
+  }
+  p {
+    padding-top: 24px;
+    text-align: center;
+  }
+}

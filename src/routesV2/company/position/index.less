@@ -1,0 +1,107 @@
+.positionWrap {
+  background-color: #fff;
+  padding-bottom: 30px;
+  :global {
+    .ant-table-wrapper {
+      margin: 0 24px;
+    }
+    .ant-table-thead > tr > th {
+      padding: 5px 16px;
+      // background-color: #fff;
+      border: none;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.45);
+    }
+    .ant-table-placeholder {
+      border-top: none;
+    }
+    .ant-table-tbody > tr {
+      vertical-align: top;
+    }
+  }
+}
+.filterWrap {
+  padding: 24px 24px 16px;
+}
+.operation {
+  white-space: nowrap;
+  button {
+    margin-right: 32px;
+  }
+}
+
+.userInfo {
+  div {
+    display: flex;
+    align-items: flex-start;
+    color: #222222;
+  }
+  p {
+    margin: 0;
+    margin-top: 8px;
+    color: #666666;
+    padding-left: 28px;
+  }
+  span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  line-height: 20px;
+}
+.jobInfo {
+  line-height: 20px;
+  div {
+    display: flex;
+    align-items: flex-start;
+  }
+  .jobInfoTitle {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #222222;
+    text-align: left;
+    margin-bottom: 8px;
+    span {
+      margin-right: 8px;
+    }
+    span:nth-of-type(1) {
+      max-width: 250px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  .jobInfoContent {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    span {
+      margin-right: 17px;
+    }
+  }
+  .jobRedTag,
+  .jobGreyTag {
+    font-size: 12px;
+    border-radius: 2px;
+    line-height: 16px;
+    padding: 0 2px;
+    margin-top: 1px;
+  }
+  .jobRedTag {
+    color: #ff4d3c;
+    border: 1px solid #ff4d3c;
+  }
+  .jobGreyTag {
+    color: #999999;
+    border: 1px solid #999999;
+  }
+}
+
+.operation,
+.userInfo,
+.tdItem {
+  line-height: 20px;
+  button {
+    margin-top: 6px;
+  }
+}

@@ -1,0 +1,128 @@
+@import './../../../utils/colors.less';
+
+.drawerStyle {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  bottom: 0;
+
+  :global {
+    .ant-drawer-body {
+      padding: 0;
+    }
+  }
+}
+
+.groupListHeader {
+  position: absolute;
+  min-height: 64px;
+  max-height: 90px;
+  background: #e6eeff;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  &.selected {
+    padding-top: 25px;
+    padding-bottom: 21px;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    color: #193b9a;
+    font-weight: bold;
+  }
+
+  .currentGroup {
+    width: 100%;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 16px;
+    font-weight: 400;
+
+    .selected {
+      color: #333333;
+      max-width: 102px;
+    }
+
+    .reset {
+      font-size: 12px;
+      line-height: 12px;
+      color: #666666;
+    }
+  }
+}
+
+.groupListFooter {
+  position: absolute;
+  height: 58px;
+  left: 0;
+  bottom: 64px;
+  right: 0;
+  cursor: pointer;
+  background-color: #fff;
+  border-top: 1px solid #eeeeee;
+
+  .icon {
+    font-size: 20px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    color: #3375ff;
+  }
+}
+
+.groupListWrapper {
+  padding-top: 70px;
+  padding-bottom: 120px;
+
+  &.selected {
+    padding-top: 96px;
+  }
+}
+
+.littlePanel {
+  position: fixed;
+  right: 0;
+  top: 64px;
+  width: 64px;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+
+  .littlePanelHeader {
+    background-color: #e6eeff;
+    font-size: 16px;
+    color: rgba(25, 59, 154, 1);
+    height: 64px;
+    font-weight: bold;
+
+    div {
+      line-height: 20px;
+    }
+  }
+
+  .littlePanelContent {
+    padding: 8px 0 0;
+    position: relative;
+    max-height: calc(~'100vh - 186px');
+    overflow-y: auto;
+  }
+
+  .littlePanelBtn {
+    height: 58px;
+
+    .icon {
+      font-size: 20px;
+      display: block;
+      height: 20px;
+      width: 20px;
+      color: #3375ff;
+    }
+  }
+}

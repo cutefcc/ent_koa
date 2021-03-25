@@ -1,0 +1,106 @@
+.main {
+  display: flex;
+  width: 100%;
+  padding-top: 16px;
+  background: #fff;
+
+  :global {
+    .ant-select-selection__rendered {
+      display: flex;
+      margin-left: 0;
+    }
+
+    .ant-select-selection__placeholder {
+      margin-left: 0 !important;
+    }
+
+    .ant-select-selection,
+    .ant-input {
+      padding: 0;
+      border: none;
+      // border-right: 1px solid #eee;
+      border-radius: 0;
+      text-overflow: ellipsis;
+    }
+
+    .ant-select-selection__clear,
+    .ant-cascader-picker-clear {
+      right: 40px;
+    }
+
+    .ant-select-arrow,
+    .ant-cascader-picker-arrow {
+      margin-right: 10px;
+    }
+
+    .ant-select-allow-clear
+      .ant-select-selection--single
+      .ant-select-selection-selected-value {
+      padding-right: 40px;
+    }
+
+    .ant-select-search__field {
+      padding-right: 40px;
+    }
+
+    .ant-input-search .ant-input-suffix {
+      display: none;
+    }
+
+    .ant-cascader-picker-label {
+      padding-right: 45px;
+    }
+  }
+
+  .select {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .autoComplete {
+    flex: 1;
+  }
+
+  .extraSelect {
+    position: relative;
+
+    .value {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 32px;
+      color: inherit;
+      font-size: 13px;
+      line-height: 32px;
+    }
+
+    .valueEmpty {
+      color: #bfbfbf;
+    }
+
+    :global {
+      .ant-select {
+        width: 100%;
+      }
+
+      .ant-select-selection {
+        width: 100%;
+        background: none;
+        z-index: 2;
+      }
+
+      .ant-select-selection--multiple .ant-select-selection__choice {
+        display: none;
+      }
+    }
+  }
+}
+
+.treeSelect {
+  :global {
+    .ant-select-tree li span.ant-select-tree-switcher {
+      width: 10px;
+    }
+  }
+}

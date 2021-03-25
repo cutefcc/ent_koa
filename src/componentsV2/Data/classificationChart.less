@@ -1,0 +1,72 @@
+@import './../../utils/colors.less';
+
+.classificationChart {
+  background-color: #f3f4f8;
+  width: 100%;
+  .classificationChartHeader {
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f2f4f8;
+    span {
+      flex: 1;
+    }
+  }
+  .classificationChartContent {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    .classificationChartContentLeft {
+      width: 950px;
+      padding-right: 40px;
+      background-color: #fff;
+    }
+    .classificationChartContentRight {
+      flex: 1;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      border-left: 1px solid #f2f4f8;
+      .blankRank {
+        height: 100%;
+        text-align: center;
+        padding-top: 160px;
+      }
+      .classificationChartContentRightItemCon {
+        width: 100%;
+        padding: 0 40px;
+        height: 32px;
+        justify-content: space-between;
+        margin-top: 24px;
+        .left {
+          .avator {
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+          }
+        }
+      }
+    }
+  }
+  .classificationChartBottom {
+    margin-top: 16px;
+    background-color: #fff;
+    padding: 0 24px;
+    .classificationChartBottomHeader {
+      height: 64px;
+      line-height: 64px;
+      justify-content: space-between;
+    }
+    .classificationChartBottomPagintion {
+      text-align: right;
+      padding: 24px 0;
+    }
+  }
+}
+
+.downloadIcon {
+  color: @blue;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}

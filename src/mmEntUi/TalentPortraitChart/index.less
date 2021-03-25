@@ -1,0 +1,65 @@
+.main {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .title {
+      flex-grow: 1;
+      color: #363d4d;
+    }
+
+    .moreText {
+      color: #666f80;
+      text-align: right;
+      cursor: pointer;
+    }
+  }
+
+  .pillar {
+    display: flex;
+    height: 24px;
+    margin-bottom: 8px;
+    line-height: 24px;
+
+    .labelContainer {
+      position: relative;
+
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 24px;
+        background-color: #ccdcff;
+        z-index: 1;
+      }
+
+      .label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 24px;
+        padding-left: 8px;
+        color: #363d4d;
+        overflow: hidden;
+        overflow: visible;
+        font-size: 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        z-index: 2;
+      }
+    }
+
+    .count {
+      flex-grow: 1;
+      color: #363d4d;
+      font-size: 12px;
+      text-align: right;
+    }
+  }
+
+  .pillar:last-child {
+    margin-bottom: 0;
+  }
+}

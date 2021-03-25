@@ -1,0 +1,29 @@
+@import './../../../utils/colors.less';
+.talentItem {
+  margin-top: 24px;
+}
+
+.talentItem:first-child {
+  margin-top: 0;
+}
+.name {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+.right {
+  flex-grow: 1;
+  .bottom {
+    width: calc(~'100% - 16px');
+    padding-right: 16px;
+    .time {
+      display: inline-block;
+      flex-grow: 1;
+    }
+    .status {
+      display: inline-block;
+      max-width: 108px;
+      text-align: right;
+    }
+  }
+}

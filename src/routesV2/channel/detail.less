@@ -1,0 +1,40 @@
+@import './../../utils/colors.less';
+
+.main {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 16px;
+  // padding: 24px 24px 0;
+  // margin: 24px 0;
+  // overflow: auto;
+
+  .top {
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    box-shadow: 0 1px 1px #eee;
+  }
+
+  .content {
+    display: flex;
+    width: 100%;
+    margin-top: 24px;
+
+    .left {
+      flex: 1;
+      padding: 0 16px 16px;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .right {
+      width: 360px;
+      margin-left: 24px;
+
+      .unavailable {
+        background: #fff;
+      }
+    }
+  }
+}

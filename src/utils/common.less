@@ -1,0 +1,37 @@
+@headerHeight: 64px;
+
+.mr8 {
+  margin-right: 8px;
+}
+
+.mr16 {
+  margin-right: 16px;
+}
+
+// 向下箭头生成工厂
+.angleDownFactory(@width: 6px, @height: 4px, @color: #fff) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: @height @width / 2 0;
+  border-style: solid;
+  border-color: @color transparent transparent;
+}
+
+// 向上箭头生成工厂
+.angleUpFactory(@width: 6px, @height: 4px, @color: #fff) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 0 @height @width / 2;
+  border-style: solid;
+  border-color: transparent transparent @color;
+}
+
+// 横线工厂函数
+.gapFactory(@width: 204px, @height: 1px, @color: rgba(238,238,238,1)) {
+  height: @height;
+  width: @width;
+  background: @color;
+  margin: 0 auto;
+}

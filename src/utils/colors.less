@@ -1,0 +1,158 @@
+// v3
+@blue_100_V3: #e6eeff;
+@blue_200_V3: #b3cbff;
+@blue_300_V3: #50679a;
+@blue_400_V3: #3b7aff;
+@blue_500_V3: #0052ff;
+@blue_700_V3: #1641b9;
+
+@bgray_100_V3: #f4f5fa;
+@bgray_200_V3: #eeeff7;
+@bgray_400_V3: #d1d3de;
+@bgray_600_V3: #afb1bc;
+@bgray_700_V3: #6e727a;
+@bgray_900_V3: #15161f;
+@gray_000_V3: #ffffff;
+
+@green_100_V3: #f4ffe6;
+@green_400_V3: #b8e09d;
+@green_500_V3: #78c905;
+
+@orange_100_V3: #fff5e6;
+@orange_400_V3: #ffe3b3;
+@orange_500_V3: #ffa408;
+
+@red_100_V3: #ffe8e6;
+@red_400_V3: #ffb9b3;
+@red_600_V3: #ff4d3c;
+// new
+@gray_000: #fff;
+@gray_200: #eee;
+@gray_300: #ddd;
+@gray_400: #999;
+@gray_500: #666;
+@gray_600: #333;
+@gray_700: #222;
+
+@bgray_100: #f8f8fa;
+@bgray_200: #f2f4f8;
+@bgray_300: #c9ced9;
+@bgray_400: #b1b6c1;
+@bgray_500: #a6abb7;
+@bgray_600: #191c23;
+
+@blue_100: #e6ecff;
+@blue_150: #e5eeff;
+@blue_200: #d0dfff;
+@blue_250: #cfdefc;
+@blue_300: #000000;
+@blue_400: #3b7aff;
+@blue_450: #3375ff;
+@blue_500: #0052ff;
+@blue_600: #0b14f9;
+@blue_650: #4e629a;
+@blue_700: #1641b9;
+
+@orange_100: #fff5e6;
+@orange_500: #ffa408;
+@orange_600: #efa932;
+@orange_800: #956935;
+@orange_900: #724804;
+
+@green_100: #f1f9e6;
+@green_400: #17d4ab;
+@green_500: #78c905;
+
+@purple_500: #c45fff;
+@purple_600: #9013fe;
+
+@red_100: #ffe5e5;
+@red_500: #fb6b58;
+@red_600: #ff4d3c;
+@red_700: #ff3b30;
+
+@cyan_400: #5ffff9;
+@cyan_500: #1adbff;
+
+// old
+@blue: #266fff;
+@blueHover: #2263e6;
+@blueBlink: #80aaff;
+@grey: #f7f9f9;
+@yellow: #febf2c;
+@orange: #f5ad1d;
+@orange2: #ffb92b;
+@green: #78c905;
+@backgroundGrey: #f2f3f5;
+@headerBackground: #172033;
+@red: #ff4d3c;
+@buttonBlueBg: #266fff;
+@buttonBlueHover: #2263e6;
+@buttonGreyBg: #a6aab3;
+
+@menuBlue: #175ce6;
+
+@stressFontColor: #363d4d;
+@commonFontColor: #666e80;
+@dilutionFontColor: #a1a6b3;
+@dilutionMoreFontColor: #c7ccd9;
+@greyFontColor: #666f80;
+@cardFooterColor: #7a8fac;
+
+.fontStress {
+  color: @stressFontColor;
+  font-family: PingFangSC-Medium, arial, verdana, helvetica, 'PingFang SC',
+    'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+}
+
+.fontCommon {
+  color: @commonFontColor;
+  font-family: PingFangSC-Regular, arial, verdana, helvetica, 'PingFang SC',
+    'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+}
+
+.fontDilution {
+  color: @dilutionFontColor;
+  font-family: PingFangSC-Regular, arial, verdana, helvetica, 'PingFang SC',
+    'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+}
+
+@color-blue-click-font: #175ce6; // 可点击图标文字
+@color-blue-button: #266fff; // 按钮
+@color-blue-button-hover: #4785ff; // 按钮 hover 背景颜色
+@color-blue-button-disabled: #cdf; // 按钮 disable 背景颜色
+@color-black-level-1: #363e4d; // 一级图标、文字
+@color-black-level-2: #666f80; // 二级图标、文字
+@color-black-level-3: #a1a7b3; // 三级图标、文字
+@color-grey-week: #c7cdd9; // 弱文字提示
+@color-grey-line: #eee; // 分割线
+@color-grey-button: #f2f4f8; // 浅灰按钮
+@color-grey-background: #f8f8fa; // 浅色背景
+@color-white: #fff;
+@color-orange-highlight: #fa0; // 高亮文字
+@color-green-success: #78c905; // 正确提示
+@color-red-fail: #ff4d3c; // 错误提示
+
+// 文字色值
+
+// 浅色背景
+@color-light-base: #000;
+// 标题，正文
+@color-t1: lighten(@color-light-base, 15%);
+// 正文
+@color-t2: lighten(@color-light-base, 35%);
+// 描述
+@color-t3: lighten(@color-light-base, 55%);
+// 禁用，占用文字
+@color-t4: lighten(@color-light-base, 75%);
+
+// // 深色背景,需要时新建一个文件
+// @color-dark-base: #fff;
+// // 标题，正文
+// @color-t1: darken(@color-dark-base, 0);
+// // 正文
+// @color-t2: darken(@color-dark-base, 15%);
+// // 描述
+// @color-t3: darken(@color-dark-base, 35%);
+// // 禁用，占用文字
+// @color-t4: darken(@color-dark-base, 55%);

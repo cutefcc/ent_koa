@@ -1,0 +1,127 @@
+@import '../../utils/colors.less';
+@import './../Button/index.less';
+
+// 目前这种只针对位置是 top 的 popover
+.popover_blue {
+  :global {
+    .ant-popover-content > .ant-popover-arrow {
+      border-right-color: #3375ff;
+      border-bottom-color: #3375ff;
+    }
+
+    .ant-popover-inner {
+      background: #3375ff;
+
+      .ant-popover-inner-content {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.primary-button {
+  &:extend(.mm-primary-button);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 8px;
+
+  .prevAndNext {
+    width: 96px;
+    height: 16px;
+    font-size: 13px;
+    line-height: 16px;
+
+    .prev {
+      display: inline-block;
+      width: 39px;
+      margin-right: 16px;
+      cursor: pointer;
+    }
+
+    .available {
+      color: #4e629a;
+    }
+
+    .unAvailable {
+      color: #e4e6eb;
+    }
+
+    .next {
+      display: inline-block;
+      width: 39px;
+      cursor: pointer;
+    }
+  }
+}
+
+.content {
+  max-height: 400px;
+  padding: 0 24px 0 8px;
+  margin-top: -12px;
+  margin-right: -8px;
+  overflow: auto;
+}
+
+.contentWithoutTitle {
+  padding-top: 12px;
+}
+
+.confirm {
+  :global {
+    .ant-popover-message {
+      padding: 4px 0 0;
+    }
+
+    .ant-popover-buttons {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 24px;
+
+      button {
+        height: 32px;
+        padding: 0 17px;
+        font-size: 14px;
+        line-height: 32px;
+      }
+
+      button:nth-child(1) {
+        border-color: #c9ced9;
+        color: #666;
+        background: none;
+      }
+
+      button:nth-child(1):hover {
+        border-color: @blue_450;
+        color: @blue_450;
+      }
+
+      .ant-btn-primary {
+        border-color: @blue_450;
+        margin-left: 16px;
+        color: #fff;
+        background: @blue_450;
+        cursor: pointer;
+      }
+
+      .ant-btn-primary:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.confirmHideIcon {
+  :global {
+    .anticon-exclamation-circle {
+      display: none;
+    }
+
+    .ant-popover-message-title {
+      padding-left: 0;
+    }
+  }
+}

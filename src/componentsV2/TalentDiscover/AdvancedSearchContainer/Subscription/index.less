@@ -1,0 +1,93 @@
+.subScriptin {
+  position: absolute;
+  top: 0;
+  height: 64px;
+  display: flex;
+  background: #fff;
+  width: 100%;
+  cursor: pointer;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  .leftSign {
+    width: 3px;
+    height: 18px;
+    margin-top: 23px;
+    background-color: #0092fe;
+  }
+  .rightContent {
+    width: 222px;
+    display: flex;
+    margin-left: 16px;
+    border-bottom: 1px solid #edeff2;
+    .text {
+      width: 190px;
+      height: 64px;
+      line-height: 64px;
+      color: #191c23;
+      font-weight: 500;
+    }
+    .icon {
+      width: 32px;
+      height: 64px;
+      line-height: 64px;
+      text-align: center;
+    }
+  }
+}
+.mainCon {
+  .popoverCon {
+    width: 448px;
+    min-height: 74px;
+    // max-height: 434px;
+    overflow-y: hidden;
+    .subscriptionItem {
+      // height: 74px;
+      background: rgba(245, 248, 255, 1);
+      margin-bottom: 8px;
+      border-radius: 4px;
+      display: flex;
+      cursor: pointer;
+      .leftArea {
+        width: 392px;
+        .positions {
+          height: 37px;
+          line-height: 37px;
+          // padding-top: 15px;
+          color: #363d4d;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        .tsTitle {
+          // height: 37px;
+
+          line-height: 2;
+          color: #999999;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+      .rightArea {
+        width: 56px;
+        padding-left: 13px;
+        position: relative;
+        .delIcon {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 28px;
+          height: 28px;
+          color: #b1b6c1;
+          line-height: 28px;
+          text-align: center;
+          border-radius: 14px;
+          // margin-top: 23px;
+          margin-top: -14px;
+          margin-left: -14px;
+          background: rgba(177, 182, 193, 0.1);
+        }
+      }
+    }
+  }
+}

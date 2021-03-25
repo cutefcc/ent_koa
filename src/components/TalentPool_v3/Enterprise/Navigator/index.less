@@ -1,0 +1,30 @@
+@import './../../../../utils/colors.less';
+
+.total {
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  margin: 0 16px;
+}
+
+.item {
+  margin-top: 20px;
+  color: @commonFontColor;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 14px;
+    border-left: 2px solid @blue;
+    font-size: 14px;
+    &:extend(.fontStress);
+  }
+
+  .content {
+    padding: 0 16px;
+  }
+
+  .disabled {
+    color: @dilutionFontColor;
+    cursor: not-allowed;
+  }
+}

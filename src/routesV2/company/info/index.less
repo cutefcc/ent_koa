@@ -1,0 +1,206 @@
+.infoWrap {
+  background-color: #fff;
+  padding-bottom: 30px;
+  img {
+    object-fit: cover;
+  }
+  .infos {
+    padding: 0 40px;
+  }
+  .infoItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .infoLabel {
+    width: 120px;
+    color: #222222;
+    margin: 0;
+  }
+  .infoValue {
+    padding: 32px 0;
+    border-bottom: 1px solid #f2f4f8;
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    div {
+      flex: 1;
+      word-break: break-all;
+    }
+    button {
+      margin-left: 114px;
+      line-height: 21px;
+    }
+  }
+  .videoInfoTips {
+    font-size: 12px;
+    color: #999999;
+  }
+  .clogoInfoTips {
+    font-size: 12px;
+    color: #999999;
+    position: absolute;
+    top: 56px;
+    left: 88px;
+  }
+  .clogoUploader {
+    :global {
+      .ant-upload {
+        width: 72px;
+        height: 72px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+      }
+      .ant-upload.ant-upload-select-picture-card {
+        border: none;
+      }
+    }
+    .clogo {
+      border-radius: 4px;
+      overflow: hidden;
+      width: 72px;
+      height: 72px;
+      display: inline-block;
+      position: relative;
+      &::after {
+        display: block;
+        color: #fff;
+        font-size: 12px;
+        width: 72px;
+        line-height: 20px;
+        content: '更换logo';
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .videoUploader {
+    width: auto;
+    :global {
+      .ant-upload {
+        width: 200px;
+        height: 112px;
+        margin: 0 16px 16px 0;
+        padding: 0;
+      }
+    }
+  }
+  .videoList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    border-bottom: 1px solid #f2f4f8;
+    flex: 1;
+    .videoItem {
+      width: 200px;
+      height: 112px;
+      margin: 0 16px 16px 0;
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      .close {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: 44px;
+        background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(0, 0, 0, 0));
+        border-radius: 4px;
+        opacity: 0;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        :global {
+          .anticon {
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            color: #fff;
+            font-size: 14px;
+          }
+        }
+      }
+      &:hover {
+        .close {
+          opacity: 1;
+        }
+        .videoActionMask {
+          display: block;
+        }
+      }
+    }
+    .videoAction {
+      cursor: pointer;
+      div:nth-of-type(2) {
+        margin-top: 5px;
+      }
+    }
+    .videoActionMask {
+      display: none;
+      width: 100%;
+      height: 40px;
+      background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(0, 0, 0, 0));
+      border-radius: 4px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .videoActionIcon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: #ffffff;
+      line-height: 20px;
+      padding: 0 8px;
+      cursor: pointer;
+      transform: rotate(90deg);
+      font-size: 16px;
+    }
+    :global {
+      .ant-popover {
+        z-index: 999;
+      }
+    }
+  }
+  .progressWrap {
+    width: 200px;
+    height: 112px;
+    border-radius: 4px;
+    margin: 0 16px 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b1b6c1;
+    position: relative;
+    :global {
+      .anticon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #fff;
+        font-size: 12px;
+        z-index: 100;
+        background: #000;
+      }
+    }
+  }
+  .companyProgress {
+    display: flex;
+    .progressTime {
+      margin-bottom: 5px;
+      color: #222222;
+    }
+    .progressDesc {
+      flex: 1;
+    }
+  }
+}

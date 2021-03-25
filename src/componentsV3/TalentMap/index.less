@@ -1,0 +1,139 @@
+@import './../../utils/colors.less';
+
+.modalBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .modalBottomLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .modalBottomRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .bottomBtn {
+      width: 88px;
+      height: 32px;
+      background: #3b7aff;
+      border-radius: 4px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .showPublicTips {
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #000;
+      line-height: 14px;
+      margin-right: 12px;
+    }
+  }
+}
+
+.modalContent {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  .modalTitle {
+    font-size: 20px;
+    font-family: HYYakuHei-GEW, HYYakuHei;
+    font-weight: normal;
+    color: #15161f;
+    line-height: 20px;
+  }
+
+  .modalSecondTitle {
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #000;
+    line-height: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+
+    .modalSecondTitleSymbol {
+      width: 16px;
+      height: 1px;
+      background-color: #3b7aff;
+      margin: 0 4px;
+    }
+  }
+
+  .totalContent {
+    width: 102%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 24px;
+
+    .singleTotalContent {
+      width: 122px;
+      height: 80px;
+      background: #e6eeff;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 4px;
+
+      .singleTotalNum {
+        font-size: 24px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #0052ff;
+        line-height: 24px;
+      }
+
+      .singleTotalTitle {
+        margin-top: 12px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #50679a;
+        line-height: 12px;
+      }
+    }
+  }
+
+  .modalEchartsContent {
+    width: 113%;
+    margin-left: -1%;
+    margin-top: -40px;
+  }
+}
+
+.loadingTip {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  color: @dilutionFontColor;
+  height: 400px;
+  padding-top: 100px;
+
+  :global {
+    .anticon-loading {
+      color: @buttonBlueBg;
+      font-size: 40px;
+    }
+  }
+}

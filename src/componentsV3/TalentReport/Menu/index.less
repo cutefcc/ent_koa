@@ -1,0 +1,78 @@
+@import '../../../utils/colors.less';
+
+.main {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow-y: auto;
+
+  .list {
+    padding: 8px;
+    padding-top: 0;
+    flex: 1;
+    overflow-y: auto;
+
+    .line {
+      width: 92%;
+      margin-left: 4%;
+      height: 1px;
+      background-color: #f2f4f8;
+      margin-top: 8px;
+    }
+
+    .headerStyle {
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      font-size: 16px;
+      color: #15161f;
+      font-weight: 500;
+      padding-left: 9px;
+      font-family: PingFangSC-Medium, PingFang SC;
+    }
+
+    .subItem {
+      padding: 5px 8px;
+      display: flex;
+      align-items: center;
+      color: @color-t1;
+      margin-bottom: 4px;
+      cursor: pointer;
+
+      span {
+        font-size: 14px;
+        line-height: 22px;
+        flex: 1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      img {
+        cursor: pointer;
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin-left: 12px;
+      }
+    }
+
+    .listLoading {
+      cursor: not-allowed;
+    }
+
+    .selectedItem {
+      background: rgba(0, 82, 255, 0.04);
+      border-radius: 4px;
+      color: @blue_500;
+    }
+
+    .subItem:hover {
+      background: rgba(0, 82, 255, 0.04);
+      border-radius: 4px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  width: 100%;
+  background: #fff;
+
+  .select {
+    flex: 1;
+
+    :global {
+      .ant-select-selection,
+      .ant-input {
+        border: none;
+        border-right: 1px solid #eee;
+        border-radius: 0;
+      }
+    }
+  }
+}

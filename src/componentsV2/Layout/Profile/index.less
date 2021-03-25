@@ -1,0 +1,47 @@
+.main {
+  .contentContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    .contentInner {
+      display: flex;
+
+      .right {
+        width: 340px;
+        min-height: 100%;
+        padding: 32px 16px;
+        margin-left: 8px;
+        background: #fff;
+
+        .group {
+          border-bottom: 1px solid #f2f4f8;
+          margin-bottom: 24px;
+        }
+      }
+
+      .left {
+        flex: 1;
+        min-height: 100%;
+        padding: 32px 24px;
+        background: #fff;
+        overflow: hidden;
+
+        .tab {
+          background: #fff;
+        }
+
+        :global {
+          .ant-affix {
+            z-index: 1031;
+          }
+        }
+      }
+    }
+  }
+}

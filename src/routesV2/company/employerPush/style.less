@@ -1,0 +1,99 @@
+@import './../../../utils/colors.less';
+.page {
+  padding: 32px 40px;
+  border-radius: 2px;
+  background: #fff;
+  .title {
+    font-size: 16px;
+    line-height: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(34, 34, 34, 1);
+    padding-left: 12px;
+    border-left: 4px solid #2570ff;
+  }
+  .help {
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    margin-bottom: 3px;
+  }
+  .itemRow {
+    display: flex;
+    margin-top: 24px;
+  }
+  .itemRow__label {
+    width: 96px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    line-height: 32px;
+  }
+  .itemRow__content {
+    flex: 1;
+  }
+  .sumbit {
+    display: flex;
+    margin-top: 24px;
+    flex-direction: row-reverse;
+    width: 560px;
+  }
+  .sumbit__tips {
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    line-height: 32px;
+    margin-right: 8px;
+  }
+  .history {
+    margin-top: 48px;
+    .row {
+      display: flex;
+      margin: 0 16px;
+      height: 89px;
+    }
+    .row__label {
+      height: 20px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(34, 34, 34, 1);
+      line-height: 20px;
+      width: 128px;
+      padding: 24px 0;
+    }
+    .row__content {
+      margin-left: 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(242, 244, 248, 1);
+      display: flex;
+      justify-content: space-between;
+      width: 746px;
+    }
+    .row__status {
+      height: 20px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(255, 164, 8, 1);
+      line-height: 20px;
+    }
+  }
+}
+
+.option {
+  display: flex;
+}
+.option:hover {
+  background: #ffff;
+}
+.option__title {
+  width: 150px;
+  background: #ffff;
+}
+.option__children {
+  flex: 1;
+  background: #ffff;
+}

@@ -1,0 +1,111 @@
+@import './../../../utils/colors.less';
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+  border-radius: 6px 6px 0 0;
+  background: #fff;
+
+  .buttons {
+    display: flex;
+  }
+
+  :global {
+    .ant-select-selection__rendered {
+      display: flex;
+      margin-left: 0;
+    }
+
+    .ant-select-selection__placeholder {
+      margin-left: 0 !important;
+    }
+
+    .ant-select-selection,
+    .ant-input {
+      padding: 0;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .ant-select-selection__clear {
+      right: 45px;
+    }
+
+    .ant-select-arrow {
+      margin-right: 20px;
+    }
+
+    .ant-select-allow-clear
+      .ant-select-selection--single
+      .ant-select-selection-selected-value {
+      padding-right: 45px;
+    }
+
+    .ant-select-search__field {
+      padding-right: 45px;
+    }
+
+    .ant-cascader-picker-arrow {
+      margin-right: 20px;
+    }
+
+    .ant-input-search .ant-input-suffix {
+      display: none;
+    }
+  }
+}
+
+.selectAllButton {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.selectAllButton:hover {
+  color: @buttonBlueBg;
+}
+
+.activeIcon {
+  color: @buttonBlueBg;
+}
+
+.groupButton,
+.directChatButton,
+.addFriendButton {
+  padding: 0;
+  border: none;
+  margin-left: 16px;
+  color: #666e80;
+  background: none;
+}
+
+.groupButton[disabled],
+.directChatButton[disabled],
+.addFriendButton[disabled] {
+  background: none;
+  opacity: 0.6;
+}
+
+.groupButton[disabled]:hover,
+.directChatButton[disabled]:hover,
+.addFriendButton[disabled]:hover {
+  background: none;
+}
+
+.addFriendButton:hover {
+  color: @buttonBlueBg;
+}
+
+.sortSelection {
+  :global {
+    .ant-select-selection-selected-value {
+      display: flex;
+      flex: 1;
+      padding-right: 0;
+      margin-right: 40px;
+    }
+  }
+}

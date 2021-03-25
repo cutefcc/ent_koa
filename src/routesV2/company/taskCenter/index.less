@@ -1,0 +1,122 @@
+.taskCenter {
+  background: #fff;
+  overflow: hidden;
+}
+.taskHeader {
+  padding: 15px 24px;
+  border-bottom: 1px solid #f2f4f8;
+  display: flex;
+  justify-content: space-between;
+  .myPoint {
+    line-height: 1;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 20px;
+      color: #ffa408;
+      margin: 0;
+    }
+    :global {
+      .anticon {
+        font-size: 16px;
+        margin: 0 4px 0 8px;
+      }
+    }
+  }
+}
+.taskPanel {
+  padding: 8px 0 8px 24px;
+  overflow: hidden;
+}
+.taskTitle {
+  height: 28px;
+  margin: 13px 0;
+  width: 100%;
+  float: left;
+  .headerMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .clogos {
+    padding: 0 8px;
+    height: 24px;
+    :global {
+      .ant-avatar {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+      .ant-avatar-group .ant-avatar:not(:first-child) {
+        margin-left: -4px;
+      }
+    }
+  }
+}
+.pointsMall {
+  margin: 16px 24px;
+  border-top: 1px solid #f2f4f8;
+  padding: 16px 0;
+}
+.pointsMallHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goodsWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+.goodsCard {
+  width: 178px;
+  height: 246px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #f2f4f8;
+  padding: 16px;
+  img {
+    width: 146px;
+    height: 146px;
+    background: transparent;
+    border-radius: 4px;
+  }
+  .goodsName {
+    font-size: 14px;
+    color: #222222;
+    line-height: 36px;
+  }
+  .goodsPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-size: 12px;
+      font-weight: 500;
+      color: #ffa207;
+      line-height: 20px;
+    }
+    button {
+      padding: 0 8px;
+    }
+  }
+}
+.goodsRecord {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    font-size: 14px;
+    color: #15161f;
+  }
+  span:nth-of-type(1) {
+    width: 130px;
+  }
+  span:nth-of-type(2) {
+    flex: 1;
+  }
+  span:nth-of-type(3) {
+    color: #6e727a;
+  }
+}

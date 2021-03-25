@@ -1,0 +1,45 @@
+@import '../../utils/colors.less';
+
+.avatar {
+  display: inline-block;
+  color: #c9ced9;
+  background-color: #f2f4f8;
+  vertical-align: middle;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 100%;
+  text-align: center;
+}
+
+.shape_circle {
+  border-radius: 50%;
+}
+
+.shape_square {
+  border-radius: 4px;
+}
+
+.showMemberBadge {
+  position: relative;
+  display: inline-block;
+
+  .memberBadge {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    background: #fff;
+    vertical-align: middle;
+    line-height: 24px;
+    text-align: center;
+    z-index: 2;
+
+    .memberBadgeIcon {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

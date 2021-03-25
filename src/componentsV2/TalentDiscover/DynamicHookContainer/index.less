@@ -1,0 +1,33 @@
+.carouselWrapper {
+  position: relative;
+  width: 729px;
+  height: 32px;
+  background: rgba(242, 244, 248, 0.8);
+  border-radius: 4px;
+  padding: 0 14px;
+  margin-left: 5px;
+
+  .triangle {
+    position: absolute;
+    left: -5px;
+    top: 11px;
+    height: 0px;
+    width: 0px;
+    border-top: 5px solid transparent;
+    border-right: 5px solid #f2f4f8;
+    border-bottom: 5px solid transparent;
+  }
+
+  .card {
+    padding: 0;
+    margin: 0;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .carouselWrapper {
+    width: 649px;
+  }
+}

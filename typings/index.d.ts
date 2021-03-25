@@ -1,0 +1,6 @@
+declare module '*.less'
+declare module 'classnames'
+declare module 'jquery'
+declare module 'ramda'
+declare module 'mm-ent-ui'
+declare module 'componentsV2'

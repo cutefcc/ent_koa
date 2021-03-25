@@ -1,0 +1,112 @@
+@import '../../../utils/colors.less';
+
+.commonFormModal {
+  :global {
+    p {
+      margin: 0;
+    }
+
+    .ant-modal-body {
+      padding-right: 0;
+      padding-top: 0;
+    }
+    .ant-input {
+      // height: 34px;
+    }
+    .ant-select-selection--multiple {
+      // height: 34px;
+      overflow: hidden;
+    }
+    .ant-select-selection__choice,
+    .ant-select-selection-item {
+      font-size: 12px;
+      height: 24px;
+      line-height: 24px;
+      background: rgba(230, 236, 255, 1);
+      border-radius: 12px;
+      color: @color-t1;
+      border: none;
+      display: flex;
+      align-items: center;
+    }
+    // .ant-select-selection--multiple .ant-select-selection__choice__remove > * {
+    //   line-height: 2;
+    // }
+
+    .ant-select-selection--multiple .ant-select-selection__choice__remove {
+      line-height: 0;
+      right: 6px;
+      top: 6px;
+    }
+
+    .ant-select ul,
+    .ant-select-selector {
+      width: max-content;
+      width: 244px;
+      list-style: none;
+      white-space: nowrap;
+      overflow: hidden;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+    }
+
+    .ant-btn-primary:disabled,
+    .ant-btn-primary[disabled] {
+      border-color: transparent;
+    }
+  }
+  .formItem {
+    width: 245px;
+    height: 90px;
+    margin-right: 23px;
+    float: left;
+    p {
+      line-height: 22px;
+      margin: 24px 0 4px 0;
+    }
+  }
+  .formItemTitle {
+    line-height: 22px;
+    margin: 0 0 4px 0;
+  }
+  .cascaderInput {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // height: 34px;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    outline: none;
+    padding: 0 5px;
+    :global {
+      .ant-input {
+        border: none;
+        padding-left: 7px;
+      }
+      .ant-input:focus {
+        box-shadow: 0 0 0 0;
+      }
+    }
+  }
+  .modalFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 12px;
+      :global {
+        .ant-btn-link {
+          padding: 0 4px;
+        }
+      }
+    }
+  }
+}

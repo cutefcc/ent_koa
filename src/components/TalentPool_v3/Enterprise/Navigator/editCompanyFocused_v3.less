@@ -1,0 +1,99 @@
+@import './../../../../utils/colors.less';
+
+.modalContent {
+  .subTitle {
+    width: 512px;
+    background: rgba(59, 122, 255, 0.1);
+    border: 1px solid rgba(59, 122, 255, 0.3);
+    border-radius: 2px;
+    padding: 10px 16px 10px 16px;
+    line-height: 22px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .companyListCon {
+    max-height: 392px;
+    overflow-y: auto;
+  }
+  .selectContainer {
+    position: relative;
+    margin-top: 21px;
+  }
+
+  .select {
+    width: 100%;
+
+    :global {
+      .ant-select-arrow {
+        display: none;
+      }
+
+      .ant-select-selection__rendered {
+        margin-right: 200px;
+      }
+    }
+  }
+
+  .staffNumTip {
+    position: absolute;
+    right: 16px;
+    color: @dilutionFontColor;
+    vertical-align: middle;
+    line-height: 100%;
+    line-height: 32px;
+  }
+
+  .confirmContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 17px;
+    border-radius: 4px;
+    margin-top: 8px;
+    color: #956935;
+    background: #fffde5;
+    line-height: 32px;
+
+    .confirmButton {
+      color: #ffa408;
+    }
+  }
+
+  .confirmContainer[disabled] {
+    color: #666;
+    background: #f8f8fa;
+    cursor: not-allowed;
+
+    .confirmButton {
+      color: #78c905;
+      background: none;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.addCompanys {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #3b7aff;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  .addCompanysDiv {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: #3b7aff;
+    margin-top: 4px;
+    position: relative;
+    top: 9px;
+    margin-right: 5px;
+  }
+  .addCompanyIcon {
+    transform: matrix(0.707, -0.707, 0.707, 0.707, 0, -9);
+    color: #fff;
+  }
+}

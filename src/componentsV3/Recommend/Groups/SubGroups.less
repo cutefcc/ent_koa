@@ -1,0 +1,81 @@
+@import '../../../utils/colors.less';
+.subGroups {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+  background-color: #fff;
+  margin-bottom: 1px;
+  :global {
+    .ant-tag {
+      padding: 0;
+      margin-right: 8px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      border-width: 0;
+      .ant-tag-checkable {
+        color: #666666;
+        padding: 1px 8px 1px 8px;
+        margin: 0;
+        line-height: 22px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        background: rgba(0, 0, 0, 0.052);
+      }
+      //触发之后的效果
+      .ant-tag-checkable-checked {
+        color: #fff;
+        background: rgba(0, 82, 255, 1);
+        opacity: 0.9;
+      }
+    }
+  }
+  .tags {
+    height: max-content;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+  }
+  .tagsAddCompany {
+    padding: 10px;
+    right: 0;
+    bottom: 0;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: right;
+    line-height: 22px;
+    cursor: pointer;
+  }
+  .btnDiv {
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    margin-right: 10px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    .arrow {
+      transform: rotate(180deg);
+    }
+    .btn {
+      margin-right: 0;
+    }
+    span {
+      margin-bottom: 12px;
+      margin-right: 3px;
+      margin-top: auto;
+      align-self: flex-end;
+      width: 24px;
+      height: 24px;
+      svg {
+        width: 24px;
+        height: 24px;
+        padding: 6px;
+        border-radius: 12px;
+        color: #666666;
+        background: rgba(0, 0, 0, 0.04);
+      }
+    }
+  }
+}

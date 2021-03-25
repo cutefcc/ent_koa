@@ -1,0 +1,29 @@
+@import './../../../utils/colors.less';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  height: 100%;
+  margin: 16px auto 24px;
+  overflow: hidden;
+
+  .content {
+    flex: 1;
+    background: #fff;
+    overflow: auto;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+  }
+}
+
+.addStaffButton {
+  padding: 0 50px;
+  margin: 20px 0 0 30px;
+  color: #fff;
+  background: @blue;
+}

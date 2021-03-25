@@ -1,0 +1,53 @@
+@import './../../utils/colors.less';
+
+.sider {
+  &Header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 20px;
+    border-bottom: 4px solid @backgroundGrey;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    span {
+      display: block;
+      line-height: 27px;
+    }
+
+    &Icon {
+      margin-right: 30px;
+      color: @blue;
+      font-size: 50px;
+    }
+
+    &Recharge {
+      padding: 5px 30px;
+      margin-left: 20px;
+      color: #fff;
+      background: @blue;
+    }
+
+    .feedbackPanel {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        border: none;
+        color: @blue;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &Content {
+    padding: 5px;
+  }
+}
+
+.feedbackModal {
+  p {
+    margin-top: 10px;
+    color: #aaa;
+  }
+}

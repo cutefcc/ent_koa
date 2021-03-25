@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>人才银行</title>
+    <!-- <script>
+      var userAgent = navigator.userAgent || ''
+      var isChrome =
+        userAgent.indexOf('Chrome') > -1 || userAgent.indexOf('Safari') > -1
+      if (!isChrome) {
+        alert('建议您使用 Chrome 浏览器，获取更好的体验！')
+      }
+    </script> -->
+    <style>
+      #root {
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="/libs.dll.js"></script>
+  </body>
+  <script>
+    if (window.location.href.indexOf('/ent/v2/') !== -1) {
+      document.title = '人才银行'
+    }
+  </script>
+</html>

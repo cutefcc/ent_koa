@@ -1,0 +1,24 @@
+@import './../../../utils/colors.less';
+
+.tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .item {
+    display: inline-block;
+    padding: 0 24px;
+    line-height: 40px;
+    cursor: pointer;
+  }
+
+  .item:first-child {
+    padding-left: 0;
+  }
+
+  .active {
+    // border-bottom: 3px solid @blue;
+    // margin-bottom: -1px;
+    color: @blue;
+  }
+}

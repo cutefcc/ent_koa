@@ -1,0 +1,64 @@
+@import '../../../utils/colors.less';
+.commonFormModal {
+  :global {
+    p {
+      margin: 0;
+      padding: 0px 0px 8px 0px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .ant-modal-title {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .ant-modal-body {
+      height: 276px;
+      background: rgba(255, 255, 255, 1);
+      color: @color-t1;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    .ant-modal-footer {
+      height: 52px;
+    }
+  }
+  .cancel {
+    width: 65px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgba(201, 206, 217, 1);
+  }
+  .modalFailure {
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 228px;
+  }
+  .modalSuccess {
+    line-height: 22px;
+    padding: 0;
+    margin-bottom: 0;
+    .modalPage {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 8px 0;
+      padding: 0;
+    }
+    .modalContant {
+      display: block;
+      width: 430px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-break: keep-all;
+    }
+    .importButton {
+      padding: 0;
+      margin: 0;
+      width: 42px;
+      height: 22px;
+      color: rgba(0, 82, 255, 1);
+      white-space: pre;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "include": ["./src/**/*", "./typings/", "tsconfig.json"],
+  "typings": "./typings/index.d.ts",
+  "exclude": ["node_modules", "./node_modules"],
+  "lib": ["es6"],
+  "compilerOptions": {
+    "noStrictGenericChecks": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "baseUrl": "./src",
+    "target": "es6",
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    // "module": "ESNext",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    // "maxNodeModuleJsDepth": 3,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "paths": {
+      "common/*": ["./src/common/*"],
+      "components/*": ["./src/components/*"],
+      "componentsV2/*": ["./src/componentsV2/*"],
+      "constants/*": ["./src/constants/*"],
+      "layouts/*": ["./src/layouts/*"],
+      "models/*": ["./src/models/*"],
+      "routes/*": ["./src/routes/*"],
+      "routesV2/*": ["./src/routesV2/*"],
+      "services/*": ["./src/services/*"],
+      "utils/*": ["./src/utils/*"],
+      "indexStyle": ["./src/index.less"],
+      "images": ["./src/images"],
+      "voyager": ["./src/utils/voyager/index"],
+      "mm-ent-ui": ["./src/mmEntUi/index"]
+    }
+  }
+}

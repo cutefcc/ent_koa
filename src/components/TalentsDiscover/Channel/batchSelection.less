@@ -1,0 +1,60 @@
+@import './../../../utils/colors.less';
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+
+  .buttons {
+    display: flex;
+  }
+
+  .tip {
+    margin-right: 8px;
+    padding-right: 8px;
+    border-right: 1px solid #eee;
+  }
+}
+
+.selectAllButton {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.selectAllButton:hover {
+  color: @buttonBlueBg;
+}
+
+.activeIcon {
+  color: @buttonBlueBg;
+}
+
+.groupButton,
+.directChatButton,
+.addFriendButton {
+  border: none;
+  background: none;
+  margin-left: 24px;
+  padding: 0;
+  color: #666e80;
+  font-size: 16px;
+}
+
+.groupButton[disabled],
+.directChatButton[disabled],
+.addFriendButton[disabled] {
+  background: none;
+  opacity: 0.6;
+}
+
+.groupButton[disabled]:hover,
+.directChatButton[disabled]:hover,
+.addFriendButton[disabled]:hover {
+  background: none;
+}
+
+.addFriendButton:hover {
+  color: @buttonBlueBg;
+}

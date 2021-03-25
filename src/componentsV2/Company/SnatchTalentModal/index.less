@@ -1,0 +1,74 @@
+.snatchModal {
+  :global {
+    .ant-modal-body {
+      padding-bottom: 12px;
+    }
+  }
+}
+.titleTab {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 20px;
+  div {
+    // width: 144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p {
+    width: 120px;
+    height: 40px;
+    margin: 0;
+    background: #ffffff;
+    box-shadow: 0px 1px 4px 0px rgba(21, 22, 31, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #15161f;
+    font-weight: 500;
+    font-family: PingFangSC-Medium, PingFang SC;
+    cursor: pointer;
+  }
+  .activeTab {
+    box-shadow: 0px 6px 18px 0px rgba(21, 22, 31, 0.14);
+  }
+}
+
+.snatchMain {
+  width: 648px;
+  padding: 24px 0 12px;
+  p {
+    font-size: 20px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #15161f;
+    line-height: 28px;
+    margin: 0;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+  .talentAvatars {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0 16px;
+    position: relative;
+    :global {
+      .mm-avatar {
+        margin-right: 8px;
+      }
+    }
+  }
+  .talentAvatarsMore {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin-left: -32px;
+    color: #fff;
+    background: rgba(80, 103, 154, 0.6);
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,142 @@
+@import './../../utils/colors.less';
+
+.card {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid @backgroundGrey;
+
+  .checkbox {
+    width: 30px;
+    line-height: 40px;
+    cursor: pointer;
+  }
+
+  .info {
+    flex: 1;
+
+    p {
+      margin: 0;
+    }
+
+    .top {
+      display: flex;
+
+      .avatar {
+        width: 55px;
+        cursor: pointer;
+      }
+
+      .brief {
+        flex: 1;
+
+        .line1 {
+          line-height: 16px;
+
+          .name {
+            color: #333;
+            font-size: 16px;
+            font-family: PingFangSC-Medium arial, verdana, helvetica,
+              'PingFang SC', 'HanHei SC', STHeitiSC-Light, Microsoft Yahei,
+              sans-serif;
+          }
+
+          .position {
+            margin-left: 8px;
+            color: #333;
+          }
+        }
+
+        .line2 {
+          margin-top: 8px;
+          line-height: 18px;
+        }
+      }
+
+      .buttons,
+      .phone {
+        line-height: 40px;
+      }
+
+      .phone {
+        margin-right: 24px;
+        color: #666;
+      }
+    }
+
+    .bottom {
+      margin: 20px 0 0 55px;
+
+      .line3,
+      .line4 {
+        display: flex;
+        line-height: 20px;
+      }
+
+      .line4 {
+        margin-top: 8px;
+      }
+
+      .flex1 {
+        display: flex;
+        flex: 1;
+        margin-right: 20px;
+      }
+
+      .flex1:last-child {
+        margin-right: 0;
+      }
+
+      .label {
+        width: 42px;
+        color: #999;
+      }
+
+      .text {
+        display: inline-block;
+        flex: 1;
+        width: 300px;
+        color: #666;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.pop {
+  padding: 10px;
+
+  .popTitle {
+    color: #333;
+    font-size: 14px;
+    font-family: PingFangSC-Medium arial, verdana, helvetica, 'PingFang SC',
+      'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+    line-height: 20px;
+  }
+
+  .popItems {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+
+    li {
+      margin-bottom: 6px;
+      line-height: 20px;
+    }
+
+    li.label {
+      display: inline-block;
+      padding: 3px 16px;
+      border-radius: 3px;
+      margin: 0 8px 3px 0;
+      background: @backgroundGrey;
+    }
+  }
+
+  .labelPopItems {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+}

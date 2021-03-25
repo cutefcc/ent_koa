@@ -1,0 +1,124 @@
+@import './../../utils/colors.less';
+
+.main {
+  padding: 24px 24px 0;
+
+  .header {
+    line-height: 20px;
+
+    * {
+      line-height: 20px;
+    }
+
+    .tip {
+      margin-left: 16px;
+      color: @dilutionFontColor;
+      font-size: 14px;
+    }
+  }
+
+  .content {
+    display: flex;
+    margin-top: 16px;
+
+    .item {
+      flex: 1;
+      max-width: 450px;
+      padding: 24px;
+      margin-left: 24px;
+      background: #fff;
+
+      * {
+        line-height: 1em;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1em;
+      }
+
+      .title {
+        font-size: 18px;
+        &:extend(.fontStress);
+      }
+
+      .balance {
+        margin-top: 8px;
+        color: @dilutionFontColor;
+        font-size: 16px;
+      }
+
+      .input {
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+
+        .button {
+          width: 80px;
+          height: 32px;
+          padding: 0;
+          border-radius: 16px;
+          color: #fff;
+          background: @buttonBlueBg;
+          font-size: 14px;
+          line-height: 32px;
+
+          span {
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
+    .item:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.confirmRecycleModal {
+  :global {
+    .ant-confirm-body {
+      .anticon-question-circle {
+        display: none;
+      }
+
+      .ant-confirm-title {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .ant-confirm-content {
+        margin-top: 40px;
+        margin-left: 0;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .ant-confirm-btns {
+      width: 100%;
+      margin-top: 44px;
+
+      button:first-child {
+        display: none;
+      }
+
+      .ant-btn-primary {
+        width: 100%;
+        height: 40px;
+        margin-left: 0;
+        color: #fff;
+        background: @blue;
+        font-size: 16px;
+      }
+    }
+  }
+}

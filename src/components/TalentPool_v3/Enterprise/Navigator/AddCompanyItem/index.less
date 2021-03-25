@@ -1,0 +1,87 @@
+@import './../../../../../utils/colors.less';
+.addCompanyItem {
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 8px;
+  padding-right: 16px;
+  .normalCon {
+    height: 32px;
+    .companyName {
+      float: left;
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #15161f;
+      margin-left: 8px;
+      margin-right: 16px;
+    }
+    .companyNum {
+      float: left;
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #afb1bc;
+    }
+    .modifyIcon {
+      float: right;
+      width: 12.5px;
+      height: 12.5px;
+      cursor: pointer;
+      img {
+        width: 12.5px;
+      }
+      margin-right: 8px;
+    }
+  }
+  .normalCon:hover {
+    background: #f4f5fa;
+    border-radius: 4px;
+  }
+  .editCon {
+    position: relative;
+    .selectContainer {
+      width: 424px;
+      margin-right: 16px;
+      .select {
+        width: 424px;
+
+        :global {
+          .ant-select-arrow {
+            display: none;
+          }
+
+          .ant-select-selection__rendered {
+            margin-right: 200px;
+          }
+        }
+      }
+    }
+    .comfirmBtn {
+      min-width: 28px;
+      margin-right: 16px;
+      color: #3b7aff;
+      cursor: pointer;
+    }
+    .cancelBtn {
+      min-width: 28px;
+      color: #6e727a;
+      cursor: pointer;
+    }
+  }
+}
+.staffNumTip {
+  color: @dilutionFontColor;
+  vertical-align: middle;
+  line-height: 100%;
+  line-height: 32px;
+  position: absolute;
+  right: 110px;
+}
+.popoverConfirmIcon {
+  color: rgba(59, 122, 255, 1) !important;
+}
+.popoverConfirmContent {
+  color: #6e727a;
+  font-size: 12px;
+}
+.popoverConfirmOverlay {
+  margin-top: 10px;
+}

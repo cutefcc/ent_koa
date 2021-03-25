@@ -1,0 +1,57 @@
+@import './../../../utils/colors.less';
+
+.main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  .right {
+    width: 240px;
+    height: 24px;
+    border-left: 1px solid #eee;
+    line-height: 24px;
+
+    :global {
+      .ant-select-selection {
+        height: 24px;
+        border: none;
+        line-height: 24px;
+      }
+
+      .ant-select-selection__rendered {
+        line-height: 24px;
+      }
+    }
+  }
+
+  .left {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    .tab {
+      display: flex;
+    }
+    .tabItem {
+      padding: 0 24px;
+      color: @commonFontColor;
+      font-size: 14px;
+      cursor: pointer;
+      display: block;
+    }
+
+    .activeTab {
+      color: @buttonBlueBg;
+    }
+
+    .filter {
+      margin-right: 48px;
+      cursor: pointer;
+
+      .active {
+        color: @buttonBlueBg;
+      }
+    }
+  }
+}

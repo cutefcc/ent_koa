@@ -1,0 +1,69 @@
+.main {
+  .content {
+    max-height: 310px;
+    overflow: auto;
+    padding: 0 32px;
+    .subtitle {
+      font-size: 14px;
+      &:extend(.fontStress);
+      span {
+        float: right;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 14px;
+        color: #666666;
+        font-weight: 400;
+      }
+    }
+    .subtitle::before {
+      content: ' ';
+      background: #3375ff;
+      width: 3px;
+      height: 13px;
+      margin-top: 0px;
+      margin-right: 6px;
+      display: inline-block;
+      position: relative;
+      top: 1px;
+    }
+    .groupItem {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 16px;
+      margin-top: 8px;
+      margin-right: 8px;
+      background: #f7f9f9;
+      cursor: pointer;
+      max-width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .groupDisabled {
+      color: #a1a6b3;
+      cursor: not-allowed;
+    }
+
+    .activeGroupItem {
+      color: #fff;
+      background: #3375ff;
+      opacity: 0.7;
+    }
+
+    .emptyTip {
+      color: #999;
+    }
+
+    .personalGroup {
+      padding-top: 16px;
+    }
+  }
+
+  .errorTip {
+    margin-left: 32px;
+    line-height: 30px;
+    color: red;
+    font-size: 12px;
+  }
+}

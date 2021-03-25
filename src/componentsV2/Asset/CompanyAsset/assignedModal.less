@@ -1,0 +1,96 @@
+@import './../../../utils/colors.less';
+
+.assignedModal {
+  :global {
+    .ant-modal-header {
+      border: none;
+      padding: 32px;
+    }
+    .ant-modal-close-x {
+      height: 78px;
+      width: 78px;
+      line-height: 85px;
+    }
+    .ant-modal-title {
+      color: #363d4d;
+      font-family: PingFangSC-Medium, arial, verdana, helvetica, 'PingFang SC',
+        'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+    }
+    .ant-modal-body {
+      padding: 0 32px;
+    }
+    .ant-modal-footer {
+      border: none;
+      padding: 28px 32px 32px 0;
+    }
+  }
+}
+.oneLine {
+  margin-bottom: 5px;
+  float: left;
+  position: relative;
+  .title {
+    color: #222222;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+.rightBorder {
+  margin-right: 23px;
+  width: 208px;
+}
+.rightBorder::after {
+  content: ' ';
+  width: 1px;
+  height: 30px;
+  background: #e4e6eb;
+  margin-top: 0px;
+  display: inline-block;
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+.inputPanel {
+  // min-width: 300px;
+  // padding-right: 24px;
+  :global {
+    .ant-modal-body {
+      overflow: hidden;
+    }
+    .ant-input-number {
+      width: 184px;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .ant-legacy-form-item-label {
+      text-align: left;
+    }
+    .ant-legacy-form-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+:global {
+  .ant-modal-body {
+    overflow: hidden;
+  }
+}
+.leftValuePanel {
+  font-size: 13px;
+  color: #999999;
+  margin-top: 8px;
+  margin-bottom: 0;
+
+  .error {
+    color: #ff3b30;
+  }
+}
+
+.button {
+  padding: 0 50px;
+  margin-top: 50px;
+  color: #fff;
+  background: @blue;
+}

@@ -1,0 +1,30 @@
+.subscriptionWrapper {
+  padding: 0 16px;
+
+  .listWrapper {
+    max-height: calc(~'100vh - 257px');
+    overflow-x: hidden;
+    overflow-y: auto;
+    .subscribeItem {
+      color: #191c23;
+      font-size: 14px;
+      height: 32px;
+      line-height: 32px;
+      background: transparent;
+      cursor: pointer;
+      margin-bottom: 7px;
+      padding: 0 12px;
+
+      &.active {
+        background: rgba(230, 236, 255, 1);
+        color: #0052ff;
+        border-radius: 4px;
+      }
+
+      .icon {
+        color: #c7cdd9;
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+@import './../../utils/colors.less';
+
+.main {
+  display: flex;
+  height: 100%;
+}
+
+.menu {
+  padding-top: 10px;
+  margin-right: 5px;
+
+  &Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+    &Logo {
+      width: 90px;
+      height: 90px;
+      border: 1px solid #ccc;
+      border-radius: 60px;
+      margin-bottom: 10px;
+    }
+
+    &DefaultLogo {
+      display: inline-block;
+      padding: 31px 0;
+      color: #fff;
+      background: @blue;
+      text-align: center;
+    }
+
+    &Name {
+      font-size: 14px;
+    }
+  }
+
+  :global {
+    .anticon {
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .ant-layout-sider-children {
+      position: fixed;
+      width: 150px;
+    }
+
+    .ant-menu-inline {
+      width: 100%;
+      border-right: none;
+    }
+
+    .ant-menu-item > a {
+      color: rgba(88, 88, 88, 0.35);
+    }
+
+    .ant-menu-item-selected > a,
+    .ant-menu-item-selected > a:hover {
+      color: @blue;
+    }
+
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      color: @blue;
+      background: #f3f6f9;
+    }
+
+    .ant-menu-inline > .ant-menu-item {
+      width: auto;
+      height: 70px;
+      padding-left: 12px !important;
+      // margin-right: -4px;
+      font-size: 15px;
+      line-height: 70px;
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  min-width: 700px;
+  background: #fff;
+}
+
+.sider {
+  margin-left: 5px;
+  background: #fff;
+
+  :global {
+    .ant-layout-sider-children {
+      position: fixed;
+      top: 0;
+      // right: 0;
+      bottom: 0;
+      width: 300px;
+      height: 100%;
+      padding-top: 74px;
+      background: #fff;
+      // box-shadow: 0 10px 10px 10px #eee;
+      overflow: auto;
+    }
+  }
+}

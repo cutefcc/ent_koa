@@ -1,0 +1,51 @@
+.topTitle {
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  .title {
+    flex-grow: 1;
+    color: #363d4d;
+  }
+  .moreText {
+    width: 30px;
+    text-align: right;
+    color: #666f80;
+    cursor: pointer;
+  }
+}
+.eachItem {
+  height: 24px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  display: flex;
+  .nameDiv {
+    width: 390px;
+    position: relative;
+    .bgPercent {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      height: 24px;
+      background-color: #ccdcff;
+    }
+    .name {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 24px;
+      width: 100%;
+      padding-left: 8px;
+      z-index: 2;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      color: #363d4d;
+    }
+  }
+  .count {
+    flex-grow: 1;
+    color: #363d4d;
+    text-align: right;
+  }
+}

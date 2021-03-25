@@ -1,0 +1,71 @@
+@import '../../../utils/common.less';
+.groupItemWrapper {
+  padding-top: 16px;
+  width: 100%;
+
+  .itemTitle {
+    color: #363d4d;
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    border-left: 2px solid #266fff;
+    padding: 0 16px 0 14px;
+
+    &.active {
+      color: #0052ff;
+    }
+
+    &:hover {
+      color: #0052ff;
+    }
+  }
+
+  .itemContent {
+    padding: 16px;
+    width: 100%;
+
+    .item {
+      width: 100%;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      margin-bottom: 10px;
+      color: #666f80;
+      cursor: pointer;
+
+      &.active {
+        font-weight: bold;
+        color: #0052ff;
+      }
+
+      &:hover {
+        color: #0052ff;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .title {
+        max-width: 134px;
+      }
+
+      .titleLong {
+        max-width: 100%;
+      }
+
+      .num {
+        max-width: 60px;
+      }
+    }
+
+    .edit:hover {
+      color: #0052ff;
+    }
+  }
+
+  .gap {
+    .gapFactory(204px, 1px, rgba(238,238,238,1));
+  }
+}

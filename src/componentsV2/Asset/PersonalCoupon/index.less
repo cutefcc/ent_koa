@@ -1,0 +1,47 @@
+@import './../../../utils/colors.less';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  height: 100%;
+  margin: 16px auto 24px;
+  overflow: hidden;
+
+  .content {
+    flex: 1;
+    padding: 32px;
+    background: #fff;
+    overflow: auto;
+    min-height: calc(~'100vh - 125px');
+
+    .header {
+      font-size: 16px;
+      font-weight: bold;
+      color: #222222;
+      margin-bottom: 24px;
+    }
+
+    .leftItem {
+      width: 200px;
+      height: 120px;
+      background-color: rgba(242, 245, 255, 1);
+      border-radius: 4px;
+      margin-right: 12px;
+
+      .value {
+        font-size: 24px;
+        font-weight: bold;
+        color: #222222;
+        line-height: 1em;
+        margin-bottom: 10px;
+      }
+
+      .text {
+        font-size: 14px;
+        color: #666;
+        line-height: 1em;
+      }
+    }
+  }
+}

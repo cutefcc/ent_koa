@@ -1,0 +1,50 @@
+@import './../../../utils/colors.less';
+
+.item {
+  padding: 16px;
+
+  .title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    &:extend(.fontStress);
+  }
+}
+
+.city,
+.worktime,
+.degree,
+.companyLevel,
+.profession {
+  :global {
+    .ant-radio-button-wrapper-checked {
+      color: #fff;
+      background: @buttonBlueBg;
+    }
+
+    .ant-radio-button-wrapper {
+      height: 24px;
+      padding: 0 4px;
+      border: none;
+      border-radius: 4px;
+      margin: 0 4px 4px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .ant-radio-button-wrapper:not(:first-child)::before {
+      width: 0;
+      background-color: #fff;
+    }
+  }
+}
+
+.category,
+.resumeSource {
+  :global {
+    .ant-radio-wrapper {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+}

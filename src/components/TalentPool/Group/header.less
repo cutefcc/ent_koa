@@ -1,0 +1,167 @@
+@import './../../../utils/colors.less';
+
+.main {
+  min-height: 48px;
+  background: #fff;
+
+  .groups {
+    display: flex;
+    width: 100%;
+
+    .operation {
+      width: 161px;
+      padding-right: 24px;
+      margin-left: 24px;
+      line-height: 48px;
+
+      .collapseButton {
+        color: @dilutionFontColor;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .collapseButton:hover,
+      .editButton:hover {
+        color: @buttonBlueBg;
+      }
+
+      .editButton {
+        padding-left: 24px;
+        border-left: 1px solid #eee;
+        margin-left: 24px;
+        color: @dilutionFontColor;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+
+    .groupList {
+      flex: 1;
+      flex-wrap: wrap;
+      padding: 8px 24px;
+
+      .item {
+        display: inline-block;
+        margin-right: 40px;
+        color: @dilutionFontColor;
+        font-size: 14px;
+        line-height: 35px;
+        cursor: pointer;
+      }
+
+      .activeItem {
+        color: @buttonBlueBg;
+      }
+    }
+  }
+
+  .collapseGroup {
+    height: 48px;
+    overflow: hidden;
+  }
+}
+
+.modal {
+  max-height: 400px;
+  padding-right: 24px;
+  margin-right: -24px;
+  overflow: auto;
+
+  .editItem {
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px;
+
+    .groupName {
+      flex: 1;
+      color: @commonFontColor;
+      overflow: hidden;
+      font-size: 14px;
+    }
+
+    .operation {
+      width: 100px;
+      padding-left: 24px;
+      color: @dilutionFontColor;
+
+      span {
+        cursor: pointer;
+      }
+
+      span:hover {
+        color: @buttonBlueBg;
+      }
+    }
+  }
+
+  .addGroup {
+    color: @stressFontColor;
+
+    :global {
+      .anticon {
+        font-weight: 900;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .addGroup:hover {
+    color: @buttonBlueBg;
+  }
+}
+
+.deleteComfirmModal {
+  color: red;
+
+  :global {
+    .ant-confirm-body {
+      .anticon-question-circle {
+        display: none;
+      }
+    }
+
+    .ant-confirm-body .ant-confirm-content {
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    .ant-confirm-btns {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      button {
+        height: 32px;
+        border: none;
+        border: 1px solid #fff;
+        border-radius: 16px;
+        font-size: 14px;
+        line-height: 32px;
+      }
+
+      button:first-child {
+        flex: 1;
+        color: @dilutionFontColor;
+        background: @grey;
+      }
+
+      button:first-child:hover {
+        color: #fff;
+        background: @buttonBlueBg;
+      }
+
+      button:last-child {
+        flex: 1;
+        margin-left: 40px;
+        color: #fff;
+        background: @buttonBlueBg;
+      }
+
+      button:last-child:hover {
+        border: 1px solid @buttonBlueBg;
+        color: @buttonBlueBg;
+        background: #fff;
+      }
+    }
+  }
+}

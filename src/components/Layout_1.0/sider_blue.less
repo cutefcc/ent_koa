@@ -1,0 +1,136 @@
+@import './../../utils/colors.less';
+
+.header {
+  .logo {
+    padding: 32px 45px 0;
+    color: #fff;
+
+    :global {
+      .anticon-logo {
+        font-size: 75px;
+      }
+    }
+
+    .font1 {
+      font-size: 28px;
+      line-height: 18px;
+    }
+
+    .font2 {
+      margin-left: 8px;
+      font-size: 26px;
+      font-family: PingFangSC-Light;
+    }
+  }
+
+  .menu {
+    padding: 35px 24px 0;
+
+    :global {
+      .ant-menu-item {
+        border-radius: 6px;
+        color: #fff;
+        font-size: 16px;
+        font-family: PingFangSC-Medium arial, verdana, helvetica, 'PingFang SC',
+          'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+      }
+
+      .ant-menu-submenu:not(:last-child),
+      .ant-menu-item:not(:last-child) {
+        margin-bottom: 24px;
+      }
+
+      .ant-menu-submenu-title {
+        color: #fff;
+        font-size: 16px;
+        font-family: PingFangSC-Medium arial, verdana, helvetica, 'PingFang SC',
+          'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+
+        a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          color: #fff;
+        }
+
+        .ant-menu-submenu-arrow {
+          display: none;
+        }
+      }
+
+      .anticon {
+        margin-right: 16px;
+        font-size: 20px;
+      }
+
+      .ant-menu {
+        border: none;
+        background: @menuBlue;
+        box-shadow: none;
+      }
+
+      .ant-menu-submenu {
+        .ant-menu-item {
+          font-size: 14px;
+          font-family: PingFangSC-Regular arial, verdana, helvetica,
+            'PingFang SC', 'HanHei SC', STHeitiSC-Light, Microsoft Yahei,
+            sans-serif;
+        }
+
+        .ant-menu-item:not(:last-child) {
+          margin-bottom: 8px;
+        }
+      }
+
+      .ant-menu-item-selected {
+        border-radius: 6px;
+        color: @menuBlue;
+        background: #fff;
+
+        a {
+          color: @menuBlue;
+        }
+      }
+    }
+  }
+}
+
+.activeSubItem {
+  background: @menuBlue;
+
+  :global {
+    .ant-menu-submenu-title {
+      border-radius: 6px;
+      color: @menuBlue !important;
+      background: #fff;
+
+      a {
+        color: @menuBlue !important;
+      }
+    }
+  }
+}
+
+.activeSubItem {
+  :global {
+    .ant-menu-submenu-title {
+      border-radius: 6px;
+      color: @menuBlue !important;
+      background: #fff;
+
+      a {
+        color: @menuBlue !important;
+      }
+    }
+
+    .ant-menu-submenu-title:hover {
+      border-radius: 6px;
+      color: @menuBlue !important;
+      background: #fff;
+
+      a {
+        color: @menuBlue !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import './../../utils/colors.less';
+
+.multiAvatar {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  margin-left: -16px;
+}
+
+.multiAvatar:first-child {
+  margin-left: 0;
+}
+
+.multiAvatarEllipsis {
+  color: #fff;
+  background: @blue;
+  opacity: 0.9;
+}
+
+.multiAvatarEllipsis::after {
+  margin-left: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  content: '···';
+}
+
+.singleAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.positionSelect {
+  margin-top: 14px;
+  line-height: 40px;
+  border-radius: 6px;
+
+  :global {
+    .ant-select-selection--single {
+      height: 40px;
+    }
+
+    .ant-select-selection__rendered {
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+}
+
+.messageInput {
+  margin-top: 16px;
+  border-radius: 6px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  .cancelButton {
+    flex: 1;
+    height: 40px;
+    border-radius: 20px;
+    color: #a1a6b3;
+    background: #f7f9f9;
+  }
+
+  .submitButton {
+    flex: 1;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 24px;
+    color: #fff;
+    background: @blue;
+  }
+
+  .submitButton[disabled] {
+    color: #a1a6b3;
+    background: #ddd;
+  }
+}
+
+.main {
+  :global {
+    .ant-modal-footer {
+      border-top: none;
+    }
+  }
+}

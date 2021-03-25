@@ -1,0 +1,104 @@
+.banner {
+  width: 100%;
+  position: relative;
+  margin-bottom: 16px;
+  .bannerImg {
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+  }
+
+  .operateBtn {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #fff;
+  }
+  .closeIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+  }
+}
+
+.bannerModal {
+  padding-bottom: 0;
+  :global {
+    .ant-modal-content {
+      background-color: transparent !important;
+      padding-top: 117px;
+    }
+    .ant-modal-close {
+      color: rgba(255, 255, 255, 0.45) !important;
+    }
+
+    .ant-modal-close:hover {
+      color: rgba(255, 255, 255, 1) !important;
+    }
+    .ant-modal-body {
+      background: #fff;
+      border-radius: 20px 20px 0 0;
+      padding: 0;
+    }
+  }
+
+  .bannerModalContent {
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-top: -40px;
+    }
+
+    .name {
+      font-size: 16px;
+      color: #222222;
+      margin: 32px 0;
+      padding: 0;
+      font-family: PingFangSC-Regular, PingFang SC;
+    }
+
+    .title {
+      width: 428px;
+      margin-bottom: 16px;
+      height: 28px;
+      line-height: 28px;
+      font-size: 20px;
+      color: #001529;
+      padding: 0;
+      font-family: PingFangSC-Semibold, PingFang SC;
+
+      .highlight {
+        color: #fe8e32;
+      }
+    }
+
+    .content {
+      font-size: 14px;
+      padding: 0;
+      width: 287px;
+      margin: 0;
+      line-height: 2em;
+      color: #222222;
+      margin-bottom: 40px;
+      text-align: center;
+      font-family: PingFangSC-Regular, PingFang SC;
+
+      .highlight {
+        color: #fe8e32;
+      }
+    }
+
+    .signUpBtn {
+      width: 200px;
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 60px;
+    }
+  }
+}

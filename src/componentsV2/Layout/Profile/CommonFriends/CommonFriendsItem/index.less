@@ -1,0 +1,56 @@
+.commonFriendsCon {
+  // padding-bottom: 24px;
+  // margin-bottom: 24px;
+  // border-bottom: 1px solid #F2F4F8;
+  .commonFriendsItem {
+    height: 40px;
+    margin-bottom: 16px;
+    display: flex;
+    .avatarArea {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+    }
+    .middleArea {
+      width: 172px;
+      .name {
+        font-size: 14px;
+        color: #222222;
+        font-weight: 500;
+        height: 14px;
+        line-height: 14px;
+        margin-bottom: 8px;
+      }
+      .desc {
+        font-size: 13px;
+        color: #999;
+        height: 14px;
+        line-height: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .rightArea {
+      width: 88px;
+      display: flex;
+      justify-content: flex-end;
+      .btn {
+        width: 56px;
+        height: 24px;
+        cursor: pointer;
+        line-height: 24px;
+        text-align: center;
+        color: #4d87ff;
+        font-size: 14px;
+        background: rgba(242, 244, 248, 1);
+        border-radius: 12px;
+        margin-top: 8px;
+      }
+    }
+  }
+  .commonFriendsItem:last-child {
+    margin-bottom: 0;
+  }
+}

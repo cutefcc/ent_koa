@@ -1,0 +1,155 @@
+.photoWrap {
+  padding: 20px 24px 0 24px;
+  .title {
+    display: flex;
+    align-items: center;
+    button {
+      margin-left: 10px;
+      width: auto;
+      :global {
+        .anticon-plus {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  .albumWrap {
+    margin-top: 16px;
+  }
+  .album {
+    h3 {
+      margin-top: 8px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .editAlbumIcon {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  .photos {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .photoItem {
+    width: 128px;
+    height: 128px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 16px 16px 0;
+    position: relative;
+    img {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+    }
+    .coverTag {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      font-size: 12px;
+      color: #ffffff;
+      line-height: 20px;
+      padding: 0 4px;
+      opacity: 0.6;
+      background: #222222;
+      border-radius: 4px 0px 4px 0px;
+    }
+  }
+  .photoItem:hover {
+    .photoActionMask {
+      display: block;
+    }
+  }
+  .photoAction {
+    cursor: pointer;
+    div:nth-of-type(2) {
+      margin-top: 5px;
+    }
+  }
+  .photoActionMask {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.6);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .photoActionIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #ffffff;
+    line-height: 20px;
+    padding: 0 8px;
+    transform: rotate(90deg);
+    font-size: 16px;
+  }
+  .photoUploader {
+    width: auto;
+    :global {
+      .ant-upload {
+        width: 128px;
+        height: 128px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  :global {
+    .ant-popover {
+      z-index: 999;
+    }
+  }
+}
+.coverWrap {
+  .coverUpload {
+    width: 160px;
+    height: 160px;
+    background: #f4f5fa;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    p {
+      margin: 0;
+      height: 20px;
+      width: 100%;
+      background: #000;
+      opacity: 0.5;
+      font-size: 12px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 20px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+    }
+  }
+  .imgDes {
+    font-size: 12px;
+    color: #6e727a;
+    line-height: 20px;
+    margin-left: 16px;
+  }
+}
+.empty {
+  width: 128px;
+  height: 128px;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px dashed #d9d9d9;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,53 @@
+.mmProgress {
+  .status {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #afb1bc;
+    line-height: 20px;
+    .uploadeSize {
+    }
+    .uploadePredictTime,
+    .uploadeSpeed {
+      margin-left: 24px;
+    }
+  }
+  .success {
+    font-size: 12px;
+    color: #262626;
+    .successText {
+      margin-left: 9px;
+    }
+  }
+  :global {
+    .ant-progress-bg {
+      height: 12px !important;
+    }
+    .ant-progress-status-success .ant-progress-bg {
+      background-color: #3b7aff;
+    }
+    .ant-progress-text {
+      //   display: none;
+    }
+    .anticon-check-circle {
+      display: none;
+    }
+  }
+}
+
+.fileButton {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  filter: alpha(opacity=0);
+  input {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    cursor: pointer;
+  }
+}

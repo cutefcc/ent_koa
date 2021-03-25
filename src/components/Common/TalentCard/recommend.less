@@ -1,0 +1,114 @@
+@import './../../../utils/colors.less';
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid #eee;
+
+  .contentContainer {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .avatar {
+      display: inline-block;
+      width: 56px;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex: 1;
+    margin-left: 16px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      overflow: hidden;
+
+      .line {
+        display: flex;
+        width: 100%;
+        margin: 8px 0 0;
+        line-height: 21px;
+      }
+
+      .line:first-child {
+        margin: 0;
+        line-height: 25px;
+      }
+
+      .lineItem {
+        display: flex;
+        flex: 1;
+        overflow: hidden;
+
+        .label {
+          width: 30px;
+          margin-right: 8px;
+          color: @dilutionFontColor;
+          white-space: nowrap;
+        }
+
+        .content {
+          overflow: hidden;
+          &:extend(.fontCommon);
+        }
+
+        .stressContent {
+          color: @orange;
+          overflow: hidden;
+        }
+      }
+
+      .groupLabel {
+        padding: 0 6px;
+        border-radius: 4px;
+        margin-right: 8px;
+        background: #f7f9f9;
+        line-height: 24px;
+      }
+
+      .friendLabel {
+        padding: 5px;
+        border-radius: 2px;
+        margin-left: 8px;
+        color: @dilutionFontColor;
+        background: @grey;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    .right {
+      width: 240px;
+
+      .line1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 46px;
+
+        .button {
+          margin-left: 16px;
+        }
+
+        .button:first-child {
+          margin-left: 0;
+        }
+      }
+
+      .line2 {
+        margin-top: 16px;
+        color: @dilutionMoreFontColor;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.avatarButton {
+  cursor: pointer;
+}

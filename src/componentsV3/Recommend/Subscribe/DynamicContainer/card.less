@@ -1,0 +1,62 @@
+.item {
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  margin: 0 16px;
+
+  .avatar {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    vertical-align: middle;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    color: #999;
+  }
+
+  .dynamicDetailButton {
+    margin-right: 14px;
+    color: rgba(102, 102, 102, 1);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+  }
+}
+
+.item:first-child {
+  margin-top: 0;
+}
+
+.active {
+  padding-bottom: 0;
+  border: none;
+}
+
+.dynamicDetailEmpty {
+  padding: 20px 50px;
+}
+.dynamicDetailCon {
+  .dynamicDetail {
+    // min-height: 100px;
+    max-height: 300px;
+    padding: 0 16px 0 0;
+    margin-right: -12px;
+    overflow: auto;
+
+    li {
+      margin-top: 12px;
+    }
+
+    li:first-child {
+      margin-top: 0;
+    }
+  }
+  .viewDetail {
+    text-align: center;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,126 @@
+.employerSpreadEndList {
+  background-color: #fff;
+  .employerSpreadEndListHeader {
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+  }
+  .content {
+    padding: 24px 56px;
+    .employerSpreadEndListItem {
+      justify-content: space-between;
+      margin-bottom: 25px;
+      .itemLeft {
+        width: 224px;
+        .itemLeftLine {
+          line-height: 20px;
+          span:nth-of-type(1) {
+            color: #6e727a;
+          }
+        }
+        .itemLeftStatus {
+          height: 20px;
+          line-height: 20px;
+        }
+      }
+      .itemRight {
+        width: 675px;
+        border-bottom: 1px solid #f2f4f8;
+        display: flex;
+        .itemMidd {
+          width: 675px;
+          .itemMiddContent {
+          }
+          .itemMiddMidd {
+            justify-content: flex-start;
+            .itemMiddMiddImg {
+              display: block;
+              width: 100px;
+              height: 56px;
+              margin-right: 8px;
+              margin-top: 16px;
+            }
+            .itemMiddMiddRight {
+              // width: 256px;
+              width: 100%;
+              height: 56px;
+              background-color: #f7f6f9;
+              display: flex;
+              margin-top: 16px;
+              .itemMiddMiddRightL {
+                width: 40px;
+                height: 40px;
+                background-color: mediumaquamarine;
+                border-radius: 2px;
+                margin: 8px;
+                img {
+                  display: block;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 2px;
+                }
+              }
+              .itemMiddMiddRightR {
+                // background-color: mediumseagreen;
+                .top {
+                  height: 28px;
+                  line-height: 28px;
+                }
+                .bottom {
+                  height: 28px;
+                  line-height: 28px;
+                }
+              }
+            }
+          }
+          .itemMiddBottom {
+            margin: 16px 0 24px;
+            color: #6e727a;
+            display: flex;
+            align-items: center;
+          }
+        }
+        .itemRightR {
+          width: 170px;
+          text-align: right;
+        }
+      }
+    }
+  }
+  .pagination {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 24px 24px 40px;
+  }
+  .headerRight {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+  }
+  .epbBalance {
+    margin: 0 24px;
+    color: #6e727a;
+    span {
+      cursor: pointer;
+      color: #0052ff;
+    }
+  }
+}
+.epbRecord {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    font-size: 14px;
+    color: #15161f;
+  }
+  span:nth-of-type(1) {
+    width: 160px;
+  }
+  span:nth-of-type(2) {
+    flex: 1;
+  }
+  span:nth-of-type(3) {
+    color: #6e727a;
+  }
+}

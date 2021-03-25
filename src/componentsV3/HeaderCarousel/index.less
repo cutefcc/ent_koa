@@ -1,0 +1,55 @@
+.carouselWrapper {
+  max-width: 404px;
+  height: 32px;
+  background: #111e2a;
+  border-radius: 4px;
+  padding: 0 12px;
+  margin-right: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+
+  :global {
+    .ant-carousel {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+
+  .headerImage {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+  }
+
+  .triangle {
+    position: absolute;
+    left: -5px;
+    top: 11px;
+    height: 0px;
+    width: 0px;
+    border-top: 5px solid transparent;
+    border-right: 5px solid #f2f4f8;
+    border-bottom: 5px solid transparent;
+  }
+
+  .msg {
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffe3b3;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+// @media screen and (max-width: 1380px){
+//   .carouselWrapper {
+//     width: 649px;
+//   }
+// }

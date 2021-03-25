@@ -1,0 +1,115 @@
+@import './../../utils/colors.less';
+@import './../../utils/common.less';
+
+.mm-modal-confirm-footer {
+  margin-top: 32px;
+}
+
+.mm-modal-confirm-title {
+  display: flex;
+  justify-content: space-between;
+
+  &-close {
+    font-size: 10px;
+    color: @color-grey-week;
+  }
+}
+
+.mm-modal-confirm {
+  .ant-modal-content {
+    .ant-modal-confirm-body {
+      .anticon-question-circle {
+        display: none;
+      }
+
+      .ant-modal-confirm-title {
+        color: @color-black-level-1;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, arial, verdana, helvetica, 'PingFang SC',
+          'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+
+        .anticon-close {
+          color: #c7ccd9;
+          font-size: 9px;
+        }
+      }
+
+      .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+        margin-top: 12px;
+        margin-left: 0;
+        color: @color-black-level-2;
+        font-size: 14px;
+      }
+    }
+
+    .ant-modal-confirm-btns {
+      display: none;
+    }
+  }
+}
+
+.mm-modal-confirm-stress {
+  .ant-modal-body {
+    padding: 0;
+
+    .ant-modal-confirm-body {
+      .anticon-question-circle {
+        display: none;
+      }
+
+      .ant-modal-confirm-title {
+        padding: 24px;
+        border-bottom: 1px solid #eee;
+        font-size: 18px;
+      }
+
+      .ant-modal-confirm-content {
+        padding: 24px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.mm-modal-confirm-noTitle {
+  .ant-modal-content {
+    .ant-modal-confirm-body {
+      .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+        font-size: 16px;
+        color: @color-black-level-1;
+      }
+    }
+  }
+}
+
+.mm-modal {
+  .ant-modal-title {
+    color: @color-black-level-1;
+    font-size: 18px;
+    &:extend(.mm-common-font-weight-bold);
+  }
+
+  .ant-modal-close-x {
+    width: 64px;
+    height: 64px;
+    color: #c7ccd9;
+
+    .anticon-close {
+      font-size: 12px;
+    }
+  }
+
+  .ant-modal-header {
+    padding: 22px 24px;
+  }
+
+  .ant-modal-body {
+    padding: 24px 24px 32px;
+    max-height: 343px;
+    overflow: auto;
+  }
+
+  .ant-modal-footer {
+    padding: 16px 24px;
+  }
+}

@@ -1,0 +1,728 @@
+@import '../../utils/colors.less';
+
+/* =============== 旧版本的按钮 ========================== */
+
+/* primary */
+.mm-primary-button {
+  border-color: @blue_450;
+  color: #fff;
+  background: @blue_450;
+  cursor: pointer;
+}
+
+.mm-primary-button:hover,
+.mm-primary-button:focus {
+  border-color: @blue_500;
+  background: @blue_500;
+}
+
+.mm-primary-button[disabled] {
+  border: none;
+  color: #fff;
+  background: @blue_200;
+}
+
+.mm-primary-button[disabled]:hover,
+.mm-primary-button[disabled]:focus {
+  border: none;
+  color: #fff;
+  background: @blue_200;
+  // opacity: .3;
+}
+
+/* primary-2 */
+.mm-primary-2-button {
+  border-color: #e5eeff;
+  color: #0052ff;
+  background: #e5eeff;
+}
+
+.mm-primary-2-button:hover,
+.mm-primary-2-button:focus {
+  border-color: #cfdefc;
+  color: #0052ff;
+  background: #cfdefc;
+}
+
+.mm-primary-2-button[disabled] {
+  border-color: #c9ced9;
+  color: #fff;
+  background-color: #c9ced9;
+}
+
+.mm-primary-2-button[disabled]:hover,
+.mm-primary-2-button[disabled]:focus {
+  border-color: #c9ced9;
+  color: #fff;
+  background-color: #c9ced9;
+}
+
+/*  ghost */
+.mm-ghost-button {
+  border-color: #c7cdd9;
+  color: @stressFontColor;
+  background: none;
+  cursor: pointer;
+}
+
+.mm-ghost-button:hover,
+.mm-ghost-button:focus {
+  border-color: #4785ff;
+  color: #4785ff;
+}
+
+.mm-ghost-button[disabled],
+.mm-ghost-button[disabled]:hover,
+.mm-ghost-button[disabled]:focus {
+  border-color: #f2f4f8;
+  color: #bbb;
+  background: #ddd;
+}
+
+/*   ghost-2  */
+.mm-ghost-2-button {
+  border-color: @blue_400;
+  color: @blue_400;
+  background: none;
+  cursor: pointer;
+}
+
+.mm-ghost-2-button:hover,
+.mm-ghost-2-button:focus {
+  border-color: @blue_500;
+  color: @blue_500;
+  background: none;
+}
+
+.mm-ghost-2-button[disabled],
+.mm-ghost-2-button[disabled]:hover,
+.mm-ghost-2-button[disabled]:focus {
+  border-color: #f2f4f8;
+  color: #bbb;
+  background: none;
+}
+
+/* common  */
+.mm-common-button {
+  border-color: @blue_400;
+  color: @blue_400;
+  background: none;
+}
+
+.mm-common-button:hover,
+.mm-common-button:focus {
+  border-color: @blue_400;
+  color: @blue_400;
+}
+
+.mm-link-button {
+  color: @blue_400;
+  background: none;
+}
+
+/*  like link */
+.mm-likeLink-button {
+  height: auto;
+  padding: 0;
+  border: none;
+  color: @commonFontColor;
+  background: none;
+  box-shadow: none;
+}
+
+.mm-likeLink-button:hover,
+.mm-likeLink-button:focus {
+  height: auto;
+  padding: 0;
+  color: @blue_400 !important;
+  background: none;
+  box-shadow: none;
+}
+
+.mm-likeLink-button[disabled] {
+  height: auto;
+  padding: 0;
+  color: @dilutionFontColor;
+  background: none;
+  box-shadow: none;
+}
+
+.mm-likeLink-button[disabled]:hover,
+.mm-likeLink-button[disabled]:focus {
+  height: auto;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/*   disabled button */
+.mm-disabled-button,
+.mm-disabled-button:hover,
+.mm-disabled-button:disabled,
+.mm-disabled-button:focus {
+  border-color: #c9ced9;
+  color: #fff;
+  background-color: #c9ced9;
+}
+
+.mm-disabled-button:hover {
+  cursor: not-allowed;
+}
+
+/*  dilution button */
+.mm-dilution-button {
+  border-color: #f7f9f9;
+  color: @dilutionFontColor;
+  background: #f7f9f9;
+}
+
+.mm-dilution-button:hover,
+.mm-dilution-button:focus {
+  border-color: #f7f9f9;
+  color: #363d4d;
+  background: #f7f9f9;
+}
+
+.mm-roundCorner {
+  border-radius: 30px;
+}
+
+.mm-button-font-14 {
+  font-size: 14px;
+}
+
+.mm-button-font-16 {
+  font-size: 16px;
+}
+
+.mm-button-font-18 {
+  font-size: 18px;
+}
+
+.mm-button-font-20 {
+  font-size: 20px;
+}
+
+/* =========================================== */
+
+/* =============== 新版本的按钮 ========================== */
+// 公共
+.s_font {
+  font-size: 12px;
+}
+
+.m_font {
+  font-size: 14px;
+}
+
+.l_font {
+  font-size: 16px;
+}
+
+.s_width_fixed {
+  width: 64px;
+}
+
+.m_width_fixed {
+  width: 88px;
+}
+
+.l_width_fixed {
+  width: 112px;
+}
+
+.s_width_exact {
+  padding: 0 8px;
+}
+
+.m_width_exact {
+  padding: 0 16px;
+}
+
+.l_width_exact {
+  padding: 0 24px;
+}
+
+.s_height {
+  height: 24px;
+}
+
+.m_height {
+  height: 32px;
+}
+
+.l_height {
+  height: 40px;
+}
+
+.button_common {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  outline: none;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+// 主按钮
+.button_s_fixed_blue450 {
+  border: none;
+  color: #fff;
+  background: @blue_450;
+  &:extend(.s_font);
+  &:extend(.s_width_fixed);
+  &:extend(.s_height);
+  &:extend(.button_common);
+}
+
+.button_m_fixed_blue450 {
+  border: none;
+  color: #fff;
+  background: @blue_450;
+  &:extend(.m_font);
+  &:extend(.m_width_fixed);
+  &:extend(.m_height);
+  &:extend(.button_common);
+}
+
+.button_l_fixed_blue450 {
+  border: none;
+  color: #fff;
+  background: @blue_450;
+  &:extend(.l_font);
+  &:extend(.l_width_fixed);
+  &:extend(.l_height);
+  &:extend(.button_common);
+}
+
+.button_s_fixed_blue450:hover,
+.button_s_fixed_blue450:focus,
+.button_m_fixed_blue450:hover,
+.button_m_fixed_blue450:focus,
+.button_l_fixed_blue450:hover,
+.button_l_fixed_blue450:focus {
+  border: none;
+  background: @blue_500;
+}
+
+.button_s_fixed_blue450[disabled],
+.button_m_fixed_blue450[disabled],
+.button_l_fixed_blue450[disabled] {
+  border: none;
+  background: @blue_200;
+  cursor: not-allowed;
+}
+
+.button_s_fixed_blue450 {
+  border: none;
+  color: #fff;
+  background: @blue_450;
+  &:extend(.s_font);
+  &:extend(.s_width_fixed);
+  &:extend(.s_height);
+  &:extend(.button_common);
+}
+
+.button_m_fixed_blue450 {
+  border: none;
+  color: #fff;
+  background: @blue_450;
+  &:extend(.m_font);
+  &:extend(.m_width_fixed);
+  &:extend(.m_height);
+  &:extend(.button_common);
+}
+
+// 主按钮（da）
+.button_s_fixed_blue650 {
+  border: none;
+  color: #fff;
+  background: @blue_650;
+  &:extend(.s_font);
+  &:extend(.s_width_fixed);
+  &:extend(.s_height);
+  &:extend(.button_common);
+}
+
+.button_m_fixed_blue650 {
+  border: none;
+  color: #fff;
+  background: @blue_650;
+  &:extend(.m_font);
+  &:extend(.m_width_fixed);
+  &:extend(.m_height);
+  &:extend(.button_common);
+}
+
+.button_l_fixed_blue650 {
+  border: none;
+  color: #fff;
+  background: @blue_650;
+  &:extend(.l_font);
+  &:extend(.l_width_fixed);
+  &:extend(.l_height);
+  &:extend(.button_common);
+}
+
+.button_s_fixed_blue650:hover,
+.button_s_fixed_blue650:focus,
+.button_m_fixed_blue650:hover,
+.button_m_fixed_blue650:focus,
+.button_l_fixed_blue650:hover,
+.button_l_fixed_blue650:focus {
+  border: none;
+  background: #2c499b;
+  // background: @blue_700;
+}
+
+.button_s_fixed_blue650[disabled],
+.button_m_fixed_blue650[disabled],
+.button_l_fixed_blue650[disabled] {
+  border: none;
+  background: #d1ddff;
+  // background: @blue_200;
+  cursor: not-allowed;
+}
+
+// 次主按钮
+.button_s_fixed_blue150 {
+  border: none;
+  color: @blue_500;
+  background: @blue_150;
+  &:extend(.s_font);
+  &:extend(.s_width_fixed);
+  &:extend(.s_height);
+  &:extend(.button_common);
+}
+
+.button_m_fixed_blue150 {
+  border: none;
+  color: @blue_500;
+  background: @blue_150;
+  &:extend(.m_font);
+  &:extend(.m_width_fixed);
+  &:extend(.m_height);
+  &:extend(.button_common);
+}
+
+.button_l_fixed_blue150 {
+  border: none;
+  color: @blue_500;
+  background: @blue_150;
+  &:extend(.l_font);
+  &:extend(.l_width_fixed);
+  &:extend(.l_height);
+  &:extend(.button_common);
+}
+
+.button_s_fixed_blue150:hover,
+.button_s_fixed_blue150:focus,
+.button_m_fixed_blue150:hover,
+.button_m_fixed_blue150:focus,
+.button_l_fixed_blue150:hover,
+.button_l_fixed_blue150:focus {
+  border: none;
+  background: @blue_250;
+}
+
+.button_s_fixed_blue150[disabled],
+.button_m_fixed_blue150[disabled],
+.button_l_fixed_blue150[disabled] {
+  border: none;
+  color: #fff;
+  background: @bgray_300;
+  cursor: not-allowed;
+}
+
+// 弱按钮
+.button_s_fixed_ghost_blue450 {
+  border: 1px solid @bgray_300;
+  color: @gray_500;
+  background: none;
+  &:extend(.s_font);
+  &:extend(.s_width_fixed);
+  &:extend(.s_height);
+  &:extend(.button_common);
+}
+
+.button_m_fixed_ghost_blue450 {
+  border: 1px solid @bgray_300;
+  color: @gray_500;
+  background: none;
+  &:extend(.m_font);
+  &:extend(.m_width_fixed);
+  &:extend(.m_height);
+  &:extend(.button_common);
+}
+
+.button_l_fixed_ghost_blue450 {
+  border: 1px solid @bgray_300;
+  color: @gray_500;
+  background: none;
+  &:extend(.l_font);
+  &:extend(.l_width_fixed);
+  &:extend(.l_height);
+  &:extend(.button_common);
+}
+
+.button_s_fixed_ghost_blue450:hover,
+.button_s_fixed_ghost_blue450:focus,
+.button_m_fixed_ghost_blue450:hover,
+.button_m_fixed_ghost_blue450:focus,
+.button_l_fixed_ghost_blue450:hover,
+.button_l_fixed_ghost_blue450:focus {
+  border: 1px solid @blue_500;
+  color: @blue_500;
+}
+
+.button_s_fixed_ghost_blue450[disabled],
+.button_m_fixed_ghost_blue450[disabled],
+.button_l_fixed_ghost_blue450[disabled] {
+  border: 1px solid @bgray_300;
+  color: @bgray_300;
+  background: @bgray_200;
+  cursor: not-allowed;
+}
+
+// 主按钮，自适应宽度
+.button_s_exact_blue450 {
+  border: none;
+  color: #fff;
+  background: @blue_450;
+  &:extend(.s_font);
+  &:extend(.s_width_exact);
+  &:extend(.s_height);
+  &:extend(.button_common);
+}
+
+.button_m_exact_blue450 {
+  border: none;
+  color: #fff;
+  background: @blue_450;
+  &:extend(.m_font);
+  &:extend(.m_width_exact);
+  &:extend(.m_height);
+  &:extend(.button_common);
+}
+
+.button_l_exact_blue450 {
+  border: none;
+  color: #fff;
+  background: @blue_450;
+  &:extend(.l_font);
+  &:extend(.l_width_exact);
+  &:extend(.l_height);
+  &:extend(.button_common);
+}
+
+.button_s_exact_blue450:hover,
+.button_s_exact_blue450:focus,
+.button_m_exact_blue450:hover,
+.button_m_exact_blue450:focus,
+.button_l_exact_blue450:hover,
+.button_l_exact_blue450:focus {
+  border: none;
+  background: @blue_500;
+}
+
+.button_s_exact_blue450[disabled],
+.button_m_exact_blue450[disabled],
+.button_l_exact_blue450[disabled] {
+  border: none;
+  background: @blue_200;
+  cursor: not-allowed;
+}
+
+// 自适应宽度 弱按钮
+.button_s_exact_blue100 {
+  border: none;
+  color: #fff;
+  background: rgba(230, 236, 255, 0.6);
+  &:extend(.s_font);
+  &:extend(.s_width_exact);
+  &:extend(.s_height);
+  &:extend(.button_common);
+}
+
+.button_m_exact_blue100 {
+  border: none;
+  color: #fff;
+  background: rgba(230, 236, 255, 0.6);
+  &:extend(.m_font);
+  &:extend(.m_width_exact);
+  &:extend(.m_height);
+  &:extend(.button_common);
+}
+
+.button_l_exact_blue100 {
+  border: none;
+  color: #fff;
+  background: rgba(230, 236, 255, 0.6);
+  &:extend(.l_font);
+  &:extend(.l_width_exact);
+  &:extend(.l_height);
+  &:extend(.button_common);
+}
+
+.button_s_exact_blue100:hover,
+.button_s_exact_blue100:focus,
+.button_m_exact_blue100:hover,
+.button_m_exact_blue100:focus,
+.button_l_exact_blue100:hover,
+.button_l_exact_blue100:focus {
+  border: none;
+  background: @blue_100;
+  opacity: 0.8;
+}
+
+.button_s_exact_blue100[disabled],
+.button_m_exact_blue100[disabled],
+.button_l_exact_blue100[disabled] {
+  border: none;
+  background: @blue_100;
+  opacity: 0.24;
+  cursor: not-allowed;
+}
+
+// 自适应 链接 蓝色
+.button_s_exact_link_blue {
+  padding: 0;
+  border: none;
+  color: @blue_500;
+  background: none;
+  &:extend(.s_font);
+  &:extend(.button_common);
+}
+
+.button_m_exact_link_blue {
+  padding: 0;
+  border: none;
+  color: @blue_500;
+  background: none;
+  &:extend(.m_font);
+  &:extend(.button_common);
+}
+
+.button_l_exact_link_blue {
+  padding: 0;
+  border: none;
+  color: @blue_500;
+  background: none;
+  &:extend(.l_font);
+  &:extend(.button_common);
+}
+
+.button_s_exact_link_blue:hover,
+.button_s_exact_link_blue:focus,
+.button_m_exact_link_blue:hover,
+.button_m_exact_link_blue:focus,
+.button_l_exact_link_blue:hover,
+.button_l_exact_link_blue:focus {
+  border: none;
+  color: @blue_700;
+  box-shadow: none;
+}
+
+.button_s_exact_link_blue[disabled],
+.button_m_exact_link_blue[disabled],
+.button_l_exact_link_blue[disabled] {
+  border: none;
+  color: @bgray_300;
+  cursor: not-allowed;
+}
+
+// 自适应 链接 bgray
+.button_s_exact_link_bgray {
+  padding: 0;
+  border: none;
+  color: @blue_650;
+  background: none;
+  &:extend(.s_font);
+  &:extend(.button_common);
+}
+
+.button_m_exact_link_bgray {
+  padding: 0;
+  border: none;
+  color: @blue_650;
+  background: none;
+  &:extend(.m_font);
+  &:extend(.button_common);
+}
+
+.button_l_exact_link_bgray {
+  padding: 0;
+  border: none;
+  color: @blue_650;
+  background: none;
+  &:extend(.l_font);
+  &:extend(.button_common);
+}
+
+.button_s_exact_link_bgray:hover,
+.button_s_exact_link_bgray:focus,
+.button_m_exact_link_bgray:hover,
+.button_m_exact_link_bgray:focus,
+.button_l_exact_link_bgray:hover,
+.button_l_exact_link_bgray:focus {
+  border: none;
+  color: @blue_700;
+  box-shadow: none;
+}
+
+.button_s_exact_link_bgray[disabled],
+.button_m_exact_link_bgray[disabled],
+.button_l_exact_link_bgray[disabled] {
+  border: none;
+  color: @bgray_300;
+  cursor: not-allowed;
+}
+
+// 自适应 链接 gray
+.button_s_exact_link_gray {
+  padding: 0;
+  border: none;
+  color: @bgray_400;
+  background: none;
+  &:extend(.s_font);
+  &:extend(.button_common);
+}
+
+.button_m_exact_link_gray {
+  padding: 0;
+  border: none;
+  color: @bgray_400;
+  background: none;
+  &:extend(.m_font);
+  &:extend(.button_common);
+}
+
+.button_l_exact_link_gray {
+  padding: 0;
+  border: none;
+  color: @bgray_400;
+  background: none;
+  &:extend(.l_font);
+  &:extend(.button_common);
+}
+
+.button_s_exact_link_gray:hover,
+.button_s_exact_link_gray:focus,
+.button_m_exact_link_gray:hover,
+.button_m_exact_link_gray:focus,
+.button_l_exact_link_gray:hover,
+.button_l_exact_link_gray:focus {
+  border: none;
+  color: @blue_500;
+  box-shadow: none;
+}
+
+.button_s_exact_link_gray[disabled],
+.button_m_exact_link_gray[disabled],
+.button_l_exact_link_gray[disabled] {
+  border: none;
+  color: @gray_300;
+  cursor: not-allowed;
+}

@@ -1,0 +1,171 @@
+@import './../../utils/colors.less';
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+
+  .commonLogo {
+    color: @blue;
+    font-size: 26px;
+  }
+
+  .entLogo {
+    padding: 1px 6px;
+    border-radius: 15px;
+    margin-top: 8px;
+    color: #fff;
+    background: @blue;
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  :global {
+    .anticon-logo2 {
+      font-size: 26px;
+    }
+  }
+
+  .font1 {
+    font-size: 28px;
+    line-height: 18px;
+  }
+
+  .font2 {
+    margin-left: 8px;
+    font-size: 26px;
+    font-family: PingFangSC-Light;
+  }
+}
+
+.menu {
+  :global {
+    .ant-menu-inline {
+      border-right: none;
+    }
+
+    .ant-menu-item-selected {
+      border: none;
+      border-left: 2px solid @blue;
+      background-color: #e6eeff !important;
+    }
+
+    .ant-menu-item-selected::after {
+      display: none;
+    }
+
+    .ant-menu-item {
+      width: 100%;
+      height: 48px;
+      margin-bottom: 0;
+      line-height: 48px;
+
+      a {
+        color: @commonFontColor;
+        font-size: 16px;
+        line-height: 48px;
+
+        .anticon {
+          color: #a1a7b3;
+        }
+      }
+
+      .anticon {
+        font-size: 16px;
+      }
+    }
+
+    .ant-menu-item-selected > a {
+      color: @blue;
+
+      .anticon {
+        color: @blue;
+      }
+    }
+
+    .ant-menu-item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    .ant-menu-submenu {
+      margin-bottom: 0;
+
+      .ant-menu-item {
+        height: 46px;
+        line-height: 46px;
+      }
+
+      .ant-menu-item > a {
+        color: @commonFontColor;
+        font-size: 14px;
+        line-height: 46px;
+
+        .anticon {
+          color: #a1a7b3;
+          font-size: 16px;
+        }
+      }
+
+      .ant-menu-item-selected > a {
+        color: @blue;
+
+        .anticon {
+          color: @blue;
+        }
+      }
+
+      .ant-menu-submenu-title {
+        height: 48px;
+        color: @commonFontColor;
+        font-size: 16px;
+        line-height: 48px;
+
+        .anticon {
+          color: #a1a7b3;
+          font-size: 16px;
+        }
+
+        a {
+          color: @commonFontColor;
+
+          .anticon {
+            color: #a1a7b3;
+          }
+        }
+
+        .ant-menu-submenu-arrow {
+          display: none;
+        }
+      }
+    }
+
+    .ant-submenu-title-selected {
+      .ant-menu-submenu-title {
+        padding-right: 18px;
+        border-left: 2px solid @blue;
+        color: @blue;
+        background: #e6eeff;
+
+        a {
+          color: @blue;
+
+          .anticon {
+            color: @blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+.reddot {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: red;
+}

@@ -1,0 +1,35 @@
+.wrap {
+  background: #fff;
+  margin-top: 16px;
+}
+.header {
+  height: 70px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.clogos {
+  padding: 0 8px;
+  height: 24px;
+  :global {
+    .ant-avatar {
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .ant-avatar-group .ant-avatar:not(:first-child) {
+      margin-left: -4px;
+    }
+  }
+}
+.main {
+  display: flex;
+  padding: 0 8px 8px 24px;
+  justify-content: space-between;
+}

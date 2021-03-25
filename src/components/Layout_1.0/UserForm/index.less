@@ -1,0 +1,90 @@
+@import './../../../utils/common.less';
+@import './../../../utils/colors.less';
+
+.form {
+  border-radius: 6px;
+  margin-top: 24px;
+
+  :global {
+    input {
+      height: 40px;
+      padding-left: 70px;
+      border: none;
+      background: none;
+    }
+
+    label {
+      font-size: 14px;
+    }
+
+    .ant-col.ant-legacy-form-item-label {
+      position: absolute;
+      padding-left: 16px;
+      font-size: 14px;
+      font-family: PingFangSC-Medium;
+      z-index: 2;
+    }
+
+    .has-error .ant-input,
+    .has-error .ant-input:hover,
+    .has-error .ant-input:focus {
+      border: none;
+      border: 1px solid #f5222d;
+      background: none;
+      box-shadow: none;
+    }
+
+    .ant-legacy-form-explain {
+      display: none;
+    }
+
+    input:focus,
+    input:hover {
+      border: none;
+      box-shadow: none;
+    }
+
+    .ant-input:focus,
+    .ant-input:hover {
+      border: none;
+      outline: 0;
+    }
+
+    .ant-legacy-form-item {
+      position: relative;
+      display: flex;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      background: #f8f8fa;
+      font-size: 14px;
+      line-height: 40px;
+    }
+
+    .ant-legacy-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+}
+
+.errorTip {
+  width: 100%;
+  padding-left: 16px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  color: #fb6b58;
+  background: rgba(251, 107, 88, 0.1);
+  font-size: 12px;
+  line-height: 32px;
+
+  :global {
+    .anticon {
+      margin-right: 4px;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 14px;
+  &:extend(.fontStress);
+}

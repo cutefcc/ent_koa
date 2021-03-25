@@ -1,0 +1,148 @@
+@import '../../../../utils/common.less';
+.inviteModalWrapper {
+  :global {
+    .ant-modal-header {
+      padding: 28px 24px 12px;
+      border-bottom: 0;
+    }
+
+    .ant-modal-body {
+      padding: 0 24px;
+    }
+  }
+  .inviteModalTitle {
+    font-size: 24px;
+    // line-height: 24px;
+    color: #363e4d;
+    font-weight: bold;
+  }
+
+  .tips {
+    font-size: 14px;
+    // line-height: 16px;
+    color: #363e4d;
+    margin: 0 0 24px;
+    padding: 0;
+  }
+
+  .contentWrapper {
+    position: relative;
+    margin: 12px 8px 0 8px;
+    background: #fff;
+
+    .angle {
+      .angleUpFactory(18px, 8px, #F2F4F8);
+      position: absolute;
+      top: -8px;
+    }
+
+    :global {
+      .angle-1 {
+        left: 50px;
+      }
+      .angle-2 {
+        left: 153px;
+      }
+      .angle-3 {
+        right: 153px;
+      }
+      .angle-4 {
+        right: 50px;
+      }
+    }
+
+    .content {
+      height: 248px;
+      padding: 24px 16px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: rgba(242, 244, 248, 0.5);
+
+      .resultTip {
+        font-size: 14px;
+        margin-bottom: 24px;
+
+        .tipsDanger {
+          color: #ff4d3c;
+        }
+
+        .tipsNormal {
+          color: #363e4d;
+          font-weight: bold;
+        }
+
+        .toFilter {
+          color: #1641b9;
+          cursor: pointer;
+
+          &:hover {
+            color: #002383;
+          }
+        }
+      }
+
+      .item {
+        margin-bottom: 12px;
+        font-size: 14px;
+
+        .left {
+          min-width: 60px;
+          text-align: right;
+          margin-right: 8px;
+          color: #b1b6c1;
+        }
+
+        .right {
+          text-align: left;
+          color: #333333;
+        }
+      }
+    }
+  }
+
+  .stepModalWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+    background: rgba(25, 28, 35, 0.9);
+    box-shadow: 0 0 20px 0 rgba(166, 171, 183, 0.5);
+    z-index: 10;
+  }
+
+  .operate {
+    height: 88px;
+    display: flex;
+    width: 416px;
+    margin: 0 auto;
+    margin-top: 16px;
+    .leftTip {
+      width: 262px;
+      margin-right: 22px;
+      height: 44px;
+      .previous {
+        color: #b1b6c1;
+        height: 44px;
+        width: 36px;
+        line-height: 44px;
+        cursor: pointer;
+      }
+      .remainNum {
+        height: 22px;
+        line-height: 22px;
+        color: #333333;
+      }
+      .tipText {
+        height: 17px;
+        line-height: 17px;
+        color: #ff3b30;
+      }
+    }
+    .rightBtn {
+      width: 132px;
+      height: 44px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import './../../utils/colors.less';
+
+.modal {
+  .input {
+    height: 100px;
+  }
+
+  :global {
+    .ant-modal-footer {
+      border-top: none;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .ant-btn {
+      flex: 1;
+      border: none;
+    }
+
+    .ant-btn:hover {
+      border: none;
+      color: @blue;
+    }
+
+    .ant-btn-primary {
+      margin-left: 16px;
+      color: #fff;
+      background: @blue;
+      flex: 3;
+    }
+
+    .ant-btn-primary:hover {
+      background: @buttonBlueHover;
+      color: #fff;
+    }
+  }
+}

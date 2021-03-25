@@ -1,0 +1,170 @@
+@import './../../../utils/colors.less';
+
+.myTable {
+  border: none;
+
+  :global {
+    .ant-table-small {
+      border: none;
+    }
+
+    .ant-table-tbody > tr:hover > td {
+      background: @grey;
+    }
+
+    .ant-table-row:hover {
+      background: none;
+    }
+
+    .ant-table-small
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-tbody
+      > tr
+      > td {
+      padding: 24px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .ant-table-small
+      > .ant-table-content
+      > .ant-table-body
+      > table
+      > .ant-table-thead
+      > tr
+      > th {
+      padding: 16px 24px;
+      border-bottom: 1px solid #eee;
+      color: @commonFontColor;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: PingFangSC-Regular;
+    }
+
+    td:hover {
+      background: none;
+    }
+  }
+
+  :global {
+    .ant-btn[disabled] {
+      background: none;
+    }
+  }
+
+  .operateButtons {
+    display: flex;
+  }
+}
+
+.commonButton {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+  margin-right: 24px;
+  color: @buttonBlueBg;
+  background: @grey;
+  line-height: 32px;
+  cursor: pointer;
+
+  :global {
+    .anticon {
+      width: 32px;
+      line-height: 32px;
+    }
+  }
+}
+
+.commonButton:hover {
+  color: #fff;
+  background: @buttonBlueBg;
+}
+
+.downButton {
+  font-weight: 800;
+}
+
+.imContainer {
+  height: 500px;
+  overflow: hidden;
+
+  .im {
+    width: 900px;
+    height: 100%;
+    margin-left: -281px;
+  }
+}
+
+.card {
+  display: flex;
+
+  .position {
+    color: @dilutionFontColor;
+    font-size: 14px;
+  }
+
+  .brief {
+    margin-left: 8px;
+    color: @dilutionFontColor;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .myTable {
+    :global {
+      .ant-table-small
+        > .ant-table-content
+        > .ant-table-body
+        > table
+        > .ant-table-tbody
+        > tr
+        > td {
+        padding: 24px 16px;
+      }
+
+      .ant-table-small
+        > .ant-table-content
+        > .ant-table-body
+        > table
+        > .ant-table-thead
+        > tr
+        > th {
+        padding: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .card {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .card {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+  .card {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
+  .card {
+    max-width: 600px;
+  }
+}

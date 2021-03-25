@@ -1,0 +1,34 @@
+@import './../../utils/colors.less';
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1280px;
+  margin: 0 auto;
+  margin-top: 16px;
+
+  // margin: 24px 0;
+
+  .item {
+    flex: 1;
+    min-width: 320px;
+    margin: 0 24px 24px 0;
+  }
+
+  .loadingTip {
+    width: 100%;
+    height: 400px;
+    padding-top: 100px;
+    margin-right: 24px;
+    color: @dilutionFontColor;
+    background: #fff;
+    text-align: center;
+
+    :global {
+      .anticon-loading {
+        color: @buttonBlueBg;
+        font-size: 40px;
+      }
+    }
+  }
+}

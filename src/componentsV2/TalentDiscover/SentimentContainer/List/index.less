@@ -1,0 +1,104 @@
+@import '../../../../utils/colors.less';
+
+.sentimentListWrapper {
+  background-color: #fff;
+  padding: 8px 24px;
+
+  .content {
+    position: relative;
+    z-index: 2;
+
+    .itemWrapper {
+      padding: 24px 0;
+      border-bottom: 1px solid #eeeeee;
+
+      .text {
+        color: #222222;
+        font-size: 14px;
+        cursor: pointer;
+        overflow: hidden;
+        display: -webkit-box; //将元素设为盒子伸缩模型显示
+        -webkit-box-orient: vertical; //伸缩方向设为垂直方向
+        -webkit-line-clamp: 3; //超出3行隐藏，并显示省略号
+
+        .quote {
+          .quoteTitle {
+            color: #222222;
+            font-size: 14px;
+            margin-bottom: 16px;
+            // font-weight: bold;
+
+            .titleTag {
+              display: inline-block;
+              margin-left: 8px;
+              font-size: 12px;
+              color: #3375ff;
+              border: 1px solid rgba(51, 117, 255, 1);
+              padding: 2px 4px;
+              vertical-align: middle;
+            }
+          }
+          .quoteBlock {
+            display: inline-block;
+            height: 60px;
+            min-width: 300px;
+            padding: 0 12px;
+            border-radius: 6px;
+            line-height: 60px;
+            vertical-align: middle;
+            background-color: #f2f4f8;
+
+            .icon {
+              vertical-align: middle;
+              width: 40px;
+              height: 40px;
+              margin-right: 12px;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+      .img {
+        max-width: 150px;
+        max-height: 150px;
+        height: auto;
+        vertical-align: middle;
+        margin-top: 16px;
+        cursor: pointer;
+      }
+      .time {
+        margin-top: 24px;
+        font-size: 12px;
+        line-height: 1em;
+        color: #999;
+        cursor: pointer;
+      }
+      .comments {
+        background-color: #f8f8fa;
+        border-radius: 4px;
+        padding: 16px;
+        font-size: 12px;
+        margin-top: 24px;
+        .topIcon {
+          display: inline-block;
+          width: 3px;
+          height: 12px;
+          background-color: #b1b6c1;
+          margin-right: 4px;
+          position: relative;
+          top: 1px;
+        }
+        .commentItem {
+          margin-bottom: 12px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          color: #666;
+        }
+        .showMore {
+          color: #999999;
+        }
+      }
+    }
+  }
+}

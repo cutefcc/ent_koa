@@ -1,0 +1,42 @@
+@import './../../../utils/colors.less';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+
+  .overview {
+    display: flex;
+
+    .item {
+      flex: 1;
+      padding: 16px;
+      margin-right: 8px;
+      background: #fff;
+
+      .title {
+        font-size: 14px;
+        font-family: PingFangSC-Medium arial, verdana, helvetica, 'PingFang SC',
+          'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+      }
+
+      .field {
+        margin-left: 16px;
+      }
+    }
+
+    .item:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .chart {
+    flex: 1;
+    margin-top: 8px;
+    background: #fff;
+
+    .content {
+      margin-left: -30px;
+    }
+  }
+}

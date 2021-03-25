@@ -1,0 +1,44 @@
+@import './../../../utils/colors.less';
+
+.facetSelect {
+  overflow: hidden;
+
+  .options {
+    display: flex;
+    padding-top: 16px;
+
+    ul {
+      flex: 1;
+      list-style: none;
+      max-height: 310px;
+      padding: 0 20px;
+      overflow: auto;
+
+      li {
+        line-height: 32px;
+      }
+
+      .option {
+        cursor: pointer;
+      }
+
+      .activeOption {
+        color: @blue;
+      }
+
+      .option:hover {
+        color: @blue;
+
+        span {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+
+    ul:nth-child(2) {
+      border-left: 2px solid #eee;
+      border-right: 2px solid #eee;
+    }
+  }
+}

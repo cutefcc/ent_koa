@@ -1,0 +1,44 @@
+@import './../../../../utils/colors.less';
+
+.inviteJobSelect {
+  .jobSelectWrapper {
+    margin-top: 16px;
+
+    .label {
+      font-weight: bold;
+      color: #333;
+      font-size: 14px;
+      line-height: 1em;
+      margin: 0 0 6px 0;
+    }
+  }
+
+  .inviteText {
+    position: relative;
+    .label {
+      font-weight: bold;
+      color: #333;
+      font-size: 14px;
+      line-height: 1em;
+      margin: 0 0 6px 0;
+
+      .require {
+        color: @red_700;
+        margin-left: 2px;
+      }
+    }
+    .textArea {
+      height: 112px;
+      color: #333333;
+      font-size: 14px;
+      padding: 8px;
+    }
+    .currentLen {
+      position: absolute;
+      right: 18px;
+      bottom: 3px;
+      color: #b1b6c1;
+      font-size: 12px;
+    }
+  }
+}

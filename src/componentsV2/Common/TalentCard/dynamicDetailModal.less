@@ -1,0 +1,92 @@
+.dynamicDetail {
+  max-height: 529px;
+  overflow-y: auto;
+  .header {
+    height: 48px;
+    display: flex;
+    margin-bottom: 32px;
+    img {
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+      margin-right: 16px;
+    }
+    .userInfo {
+      padding-top: 4px;
+      div {
+        height: 16px;
+        line-height: 16px;
+      }
+      .name {
+        height: 16px;
+        margin-bottom: 8px;
+        color: #363d4d;
+      }
+      .company {
+        color: #666666;
+      }
+    }
+  }
+  .avatar {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .dynamicDetailItem {
+    .dynamicDetailItemEvent {
+      float: left;
+      // width: calc(~"65% - 22px");
+      width: 65%;
+      color: #666f80;
+      line-height: 25px;
+      cursor: default;
+    }
+    .time {
+      float: right;
+      width: 35%;
+      line-height: 25px;
+      color: #a1a6b3;
+      text-align: right;
+    }
+    .child {
+      clear: both;
+      display: flex;
+      line-height: 28px;
+      .childDesc {
+        background-color: #f8f8fa;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 73%;
+        color: #999999;
+      }
+      .childTime {
+        width: 27%;
+        text-align: right;
+        color: #a1a6b3;
+      }
+    }
+    .firstChild {
+      .childDesc {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }
+    .child:last-child {
+      margin-bottom: 12px;
+      .childDesc {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+  .isLoading {
+    text-align: center;
+  }
+}

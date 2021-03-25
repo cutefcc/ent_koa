@@ -1,0 +1,37 @@
+@import './../../utils/colors.less';
+
+.pop {
+  list-style: none;
+  padding: 0;
+  margin: -10px -15px;
+
+  li {
+    width: 100%;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 30px;
+    }
+
+    :global {
+      span.disabled {
+        color: #ccc;
+      }
+    }
+  }
+
+  li:hover {
+    color: @blue;
+  }
+}
+
+.extendButtons {
+  &Icon {
+    padding: 3px;
+    border: 1px solid #dedede;
+    color: @blue;
+    cursor: pointer;
+  }
+}

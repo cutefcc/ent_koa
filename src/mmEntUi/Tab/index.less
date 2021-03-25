@@ -1,0 +1,54 @@
+@import '../../utils/colors.less';
+
+.main_small {
+  display: flex;
+  border-bottom: 1px solid #f2f4f8;
+
+  .tab {
+    padding: 13px 16px 8px;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .tab[data-active='true'] {
+    border-bottom: 2px solid @blue_500;
+    color: @blue_500;
+    font-weight: 500;
+    font-family: PingFangSC-Medium, arial, verdana, helvetica, 'PingFang SC',
+      'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+  }
+}
+
+.main_large {
+  display: flex;
+
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-right: 48px;
+    color: #222;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .tab:last-child {
+    margin-right: 0;
+  }
+
+  .tab[data-active='true'] {
+    color: @blue_500;
+    font-weight: 600;
+  }
+
+  .tab[data-active='true']::after {
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    margin-top: 18px;
+    background: @blue_500;
+    content: '';
+  }
+}
