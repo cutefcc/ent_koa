@@ -27,7 +27,7 @@ server
     app.use(async (ctx, next) => {
       let uid = 1
       let config = [1, 2, 3]
-      let featureIp = ['167.179.102.232']
+      let featureIp = ['167.179.102.232', '10.9.0.71']
       if (config.includes(uid)) {
         // 特性体验机器
         if (!featureIp.includes(getIPAdress())) {
@@ -67,10 +67,12 @@ server
     app.use(
       proxy({
         jar: true,
-        host: 'http://front:8540',
+        host: 'http://front:8540/',
         match: /^\/groundhog/,
         map: function (path) {
-          return 'http://front:8540' + path.slice(10)
+          return path.includes('groundhog')
+            ? 'http://front:8540' + path.slice(10)
+            : ''
         },
       })
     )
