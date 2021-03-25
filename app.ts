@@ -27,7 +27,7 @@ server
     app.use(async (ctx, next) => {
       let uid = 1
       let config = [1, 2, 3]
-      let featureIp = ['10.11.81.88']
+      let featureIp = ['167.179.102.232']
       if (config.includes(uid)) {
         // 特性体验机器
         if (!featureIp.includes(getIPAdress())) {
